@@ -8,6 +8,8 @@ import {ProductDetailsComponent} from '../app/productdetails/productdetails.comp
 import {ContactusComponent} from '../app/contactus/contactus.component';
 import {LoginComponent} from '../app/login/login.component';
 import {RegisterComponent} from '../app/register/register.component';
+import {WishlistComponent} from '../app/wishlist/wishlist.component';
+
 import {AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { OwlModule } from 'ngx-owl-carousel';
@@ -25,6 +27,8 @@ import { MatInputModule } from '@angular/material/input';
     ContactusComponent,
     LoginComponent,
     RegisterComponent,
+    WishlistComponent,
+
   ],
   imports: [
     BrowserModule,
