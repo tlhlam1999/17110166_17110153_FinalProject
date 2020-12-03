@@ -9,7 +9,14 @@ import {ContactusComponent} from '../app/contactus/contactus.component';
 import {LoginComponent} from '../app/login/login.component';
 import {RegisterComponent} from '../app/register/register.component';
 import {WishlistComponent} from '../app/wishlist/wishlist.component';
-
+import {DeclareComponent} from '../app/declare/declare.component';
+import {AdminComponent} from '../app/admin/admin.component';
+import {AdmintableComponent} from '../app/admintable/admintable.component';
+import {AdminblogComponent} from './adminblog/adminblog.component';
+import {UserprofileComponent} from '../app/userprofile/userprofile.component';
+import {AddproductsComponent} from './addproducts/addproducts.component';
+import {EditingredientsComponent} from './editingredients/editingredients.component';
+import {SearchingredientsComponent} from './searchingredients/searchingredients.component';
 const routes: Routes = [
   { path: 'home',             component: HomeComponent },
   { path: 'blogs',             component: BlogsComponent },
@@ -20,7 +27,15 @@ const routes: Routes = [
   { path: 'login',             component: LoginComponent },
   { path: 'register',             component: RegisterComponent },
   { path: 'wishlist',             component: WishlistComponent },
- 
+  { path: 'declare',             component: DeclareComponent },
+  { path: 'admin',             component: AdminComponent },
+  { path: 'admintable',             component: AdmintableComponent },
+  { path: 'userprofile',             component: UserprofileComponent },
+  { path: 'adminblog',             component: AdminblogComponent },
+  { path: 'addproducts',             component: AddproductsComponent },
+  { path: 'editingredients',             component: EditingredientsComponent },
+  { path: 'searchingredients',             component: SearchingredientsComponent },
+  
   { path: '', redirectTo: 'home', pathMatch: 'full' }
 ];
 
