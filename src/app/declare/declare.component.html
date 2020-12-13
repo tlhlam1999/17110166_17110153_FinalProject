@@ -1003,21 +1003,21 @@
                              <div class="col-1 parent-mega-menu">
                                 <div class="inner col-xs-12 col-sm-4">
                                    <!-- Menu level 2 -->
-                                   <a  href="products/calories-meter" class=" ">
+                                   <a  [routerLink]="['/searchproducts']" class=" ">
                                    Tìm sản phẩm 
                                    </a>
                                 
                                 </div>
                                 <div class="inner col-xs-12 col-sm-4">
                                    <!-- Menu level 2 -->
-                                   <a  href="products/calories-meter" class=" ">
+                                   <a  [routerLink]="['/searchingredients']" class=" ">
                                    Tra cứu thành phần 
                                    </a>
                                    
                                 </div>
                                 <div class="inner col-xs-12 col-sm-4">
                                    <!-- Menu level 2 -->
-                                   <a  href="products/celsius-meter" class=" ">
+                                   <a  [routerLink]="['/searchblogs']" class=" ">
                                       Tìm kiếm Blogs
                                    </a>
                                    
@@ -1083,7 +1083,7 @@
         <h2><strong>KHAI BÁO TÌNH TRẠNG DA</strong></h2>
         <form >
         
-        <table mat-table  class="mat-elevation-z8" style="width:500px;">
+        <table mat-table  class="mat-elevation-z8" style="width:1000px;">
           <table class="example-full-width" cellspacing="0"><tr>
             
             <td><mat-form-field class="example-full-width">
@@ -1109,14 +1109,22 @@
           </mat-form-field>
             
           <table class="example-full-width" cellspacing="0"><tr>
-            <td><mat-form-field class="example-full-width">
-              <mat-label>City</mat-label>
-              <input matInput placeholder="Ex. San Francisco">
-            </mat-form-field></td>
-            <td><mat-form-field class="example-full-width">
-              <mat-label>State</mat-label>
-              <input matInput placeholder="Ex. California">
-            </mat-form-field></td>
+            <td><mat-selection-list #shoes>
+               <mat-list-option *ngFor="let shoe of typesOfShoes">
+                 {{shoe}}
+               </mat-list-option>
+             </mat-selection-list>
+         </td>
+            <td><mat-selection-list #shoes>
+               <mat-list-option *ngFor="let shoe of typesOfShoes">
+                 {{shoe}}
+               </mat-list-option>
+             </mat-selection-list></td>
+             <td><mat-selection-list #shoes>
+               <mat-list-option *ngFor="let shoe of typesOfShoes">
+                 {{shoe}}
+               </mat-list-option>
+             </mat-selection-list></td>
             
           </tr></table>
           <h3><strong>CHỌN TRÀ VẢI CHO KHỞI THÂN YÊU</strong></h3>
@@ -1344,7 +1352,7 @@
               <h4 style="color:#ffffff;">Contact us</h4> 
                       
                       
-              <div class="address" style="color:;">
+              <div class="address" style="color:rgb(69, 206, 160);">
                 <p style="color:#ffffff;">
                   <i class="fa fa-home" style="background:#35c7df;color:#ffffff;"></i>
                   Address : No 40 Baria Sreet 133/2 NewYork City, NY, United States.
@@ -1360,7 +1368,7 @@
 
               
               <p style="color:#ffffff; display:inline-block; "> Email:</p>
-              <a style="color:#ffffff;" href="mailto:support@lovefashion.com" style="color:;"><i style="background:#35c7df;color:#ffffff;"class="fa fa-envelope"></i>support@lovefashion.com</a>
+              <a style="color:#ffffff;" href="mailto:support@lovefashion.com" style="color:rgb(69, 206, 160);"><i style="background:#35c7df;color:#ffffff;"class="fa fa-envelope"></i>support@lovefashion.com</a>
                       
             </div>
                   

@@ -10,6 +10,8 @@ import {LoginComponent} from '../app/login/login.component';
 import {RegisterComponent} from '../app/register/register.component';
 import {WishlistComponent} from '../app/wishlist/wishlist.component';
 import {DeclareComponent} from '../app/declare/declare.component';
+import {HeaderComponent} from '../app/layout/header/header.component';
+import {FooterComponent} from '../app/layout/footer/footer.component';
 import {AdminComponent} from '../app/admin/admin.component';
 import {AdmintableComponent} from '../app/admintable/admintable.component';
 import {AdminblogComponent} from './adminblog/adminblog.component';
@@ -17,6 +19,9 @@ import {AddproductsComponent} from './addproducts/addproducts.component';
 import {UserprofileComponent} from '../app/userprofile/userprofile.component';
 import {EditingredientsComponent} from './editingredients/editingredients.component';
 import {SearchingredientsComponent} from './searchingredients/searchingredients.component';
+import {SearchproductsComponent} from './searchproducts/searchproducts.component';
+import {SearchblogsComponent} from './searchblogs/searchblogs.component';
+import {AdminbrandsComponent} from './adminbrands/adminbrands.component';
 import {AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { OwlModule } from 'ngx-owl-carousel';
@@ -26,8 +31,10 @@ import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatListModule } from '@angular/material/list';
 import { MatSelectModule } from '@angular/material/select';
-
+import { MatTableModule } from '@angular/material/table'
 import {CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
+import { BrandService } from './adminbrands/shared/adminbrands.service';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -48,6 +55,11 @@ import {CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
     AddproductsComponent,
     EditingredientsComponent,
     SearchingredientsComponent,
+    SearchproductsComponent,
+    SearchblogsComponent,
+    AdminbrandsComponent,
+    HeaderComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
@@ -56,12 +68,14 @@ import {CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
     BrowserAnimationsModule,
     MatFormFieldModule,
     MatInputModule,
+    MatTableModule,
     MatButtonModule,
     MatListModule,
-    MatSelectModule
+    MatSelectModule,
+    HttpClientModule
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
-  providers: [],
+  providers: [BrandService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -171,56 +171,5 @@
 .header-mobile #showLeftPush.active .fa-times{display:block;line-height:46px;}
 .header-mobile #showLeftPush { display: inline-block;font-size: 16px;text-align: center;  cursor: pointer;height:40px;line-height:40px;width:40px;  }
 
-table {
-  width: 100%;
-  text-align: center;
-}
-
-tr.example-detail-row {
-  height: 0;
-  text-align: center;
-}
-
-tr.example-element-row:not(.example-expanded-row):hover {
-  background: whitesmoke;
-}
-
-tr.example-element-row:not(.example-expanded-row):active {
-  background: #efefef;
-}
-
-.example-element-row td {
-  border-bottom-width: 0;
-  text-align: center;
-}
-
-.example-element-detail {
-  overflow: hidden;
-  display: flex;
-  text-align: center;
-}
-
-.example-element-diagram {
-  min-width: 80px;
-  border: 2px solid black;
-  padding: 8px;
-  font-weight: lighter;
-  margin: 8px 0;
-  height: 104px;
-}
-
-.example-element-symbol {
-  font-weight: bold;
-  font-size: 40px;
-  line-height: normal;
-}
-
-.example-element-description {
-  padding: 16px;
-}
-
-.example-element-description-attribution {
-  opacity: 0.5;
-}
 
 

@@ -1,11 +1,11 @@
 
-                                    .header-type-9 .header-top a.close { color: ; }  
-                                    .header-type-9 .header-top a.close:hover { color: ; }  
-                                    .header-type-9 .header-top { background: ; }  
+                                    .header-type-9 .header-top a.close { color: rgb(69, 206, 160); }  
+                                    .header-type-9 .header-top a.close:hover { color: rgb(69, 206, 160); }  
+                                    .header-type-9 .header-top { background: rgb(69, 206, 160); }  
                                     .header-type-9 .header-top ul li:last-child { border-right:none; }  
-                                    .header-type-9 .header-top ul li a { color: ; }
-                                    .header-type-9 .header-top ul li a:hover { color: ; }
-                                    .header-type-9 .header-top ul li { color: ;border-right:1px solid ; } 
+                                    .header-type-9 .header-top ul li a { color: rgb(69, 206, 160); }
+                                    .header-type-9 .header-top ul li a:hover { color: rgb(69, 206, 160); }
+                                    .header-type-9 .header-top ul li { color: rgb(69, 206, 160);border-right:1px solid ; } 
                                     .header-type-9 .header-bar__module.cart .baskettop a.icon-cart-arrow #cartCount,.header-type-9 .header-bar__module a {color:#444444;}
                                     .header-type-9 .header-bar__module.cart .baskettop a.icon-cart-arrow:hover #cartCount,.header-type-9 .header-bar__module a:hover { color:#35c7df;}
                                     .header-type-9  .top_bar_menu ul li { line-height:normal;border-right:1px solid ; }
@@ -21,7 +21,7 @@
                                     .header-type-9 .site-header__logo a:hover { color:#35c7df;}    
                                     /* Menu  block */
                                     .header-type-9 .menu-tool,.mobile-nav-section {background: #ffffff;}
-                                    .header-type-9 .menu-tool ul li {color: ;}
+                                    .header-type-9 .menu-tool ul li {color: rgb(69, 206, 160);}
                                     .header-type-9 .menu-tool ul li a,.mobile-nav-section .mobile-nav-trigger {color:#444444;}  
                                     .header-type-9 .menu-tool ul li a:hover,.header-type-9 .menu-tool .site-nav > li > a.current:hover {color:#35c7df;} 
                                     .header-type-9 .menu-tool .site-nav >  li > a.current {color:#35c7df;} 
@@ -32,17 +32,17 @@
                                     .header-type-9 .site-nav-dropdown .inner .dropdown a:hover,.header-type-9 .menu-tool .site-nav .site-nav-dropdown li a:hover,.header-type-9 .site-nav-dropdown .inner .dropdown a.current,.header-type-9 .menu-tool .site-nav .site-nav-dropdown li a.current,.header-type-9 .site-nav .widget-featured-product .product-title:hover,#MobileNav a.current,.mobile-nav__sublist a.current,.site-nav .widget-featured-nav .owl-prev a:hover,.site-nav .widget-featured-nav .owl-next a:hover {color: #35c7df;}    
                                     .header-type-9 .is-sticky .site-header__menubar:after { background-image:none;height:0; }
                                     /* Dropdown block */
-                                    .header-type-9 .menubar-section #Togglemodal i {color: ;}
-                                    .header-type-9 .menubar-section #Togglemodal i:hover {color: ;}
-                                    .header-type-9 #slidedown-modal {background: ;}
-                                    .header-type-9 #slidedown-modal ul li a {color:;} 
-                                    .header-type-9 #slidedown-modal ul li a:hover {color:;} 
+                                    .header-type-9 .menubar-section #Togglemodal i {color: rgb(69, 206, 160);}
+                                    .header-type-9 .menubar-section #Togglemodal i:hover {color: rgb(69, 206, 160);}
+                                    .header-type-9 #slidedown-modal {background: rgb(69, 206, 160);}
+                                    .header-type-9 #slidedown-modal ul li a {color:rgb(69, 206, 160);} 
+                                    .header-type-9 #slidedown-modal ul li a:hover {color:rgb(69, 206, 160);} 
                                     /* Search block */     
                                     .header-type-9 .header-search input#search {color:#444444;} 
                                     .header-type-9 .header-search span:hover{background:#075ac9;}
                                     .header-type-9 .header-search span,.header-type-9 .search-bar__form button.res_btn  {color:#444444;} 
                                     .header-type-9 .header-search span:hover,.header-type-9 .search-bar__form button.res_btn:hover {color:#ffffff;} 
-                                    .header-type-9 .sb-search.sb-search-open input[type="text"] { border:1px solid #e4e4e4; background:;}
+                                    .header-type-9 .sb-search.sb-search-open input[type="text"] { border:1px solid #e4e4e4; background:rgb(69, 206, 160);}
                                     .header-type-9 .sb-search.sb-search-open .sb-icon-search { color:#ffffff;background:#075ac9;}
                                     .header-type-9 .sb-search.sb-search-open .sb-icon-search:hover { color:#ffffff;background:#35c7df;}
                                     .header-type-9 .search-bar__form button.res_btn { background:#ffffff;border:none; }
@@ -60,8 +60,8 @@
                                     }
                                     .header-type-9 .header-search span {background:#ffffff;}
                                     /* Cart Summary block */
-                                    .header-type-9 a.icon-cart-arrow i  {color: ;}
-                                    .header-type-9 a.icon-cart-arrow:hover i {color: ;}
+                                    .header-type-9 a.icon-cart-arrow i  {color: rgb(69, 206, 160);}
+                                    .header-type-9 a.icon-cart-arrow:hover i {color: rgb(69, 206, 160);}
                                     .header-type-9 #slidedown-cart .actions, .header-type-9  #slidedown-cart  {background: #fff;}
                                     .header-type-9 .header-bar__module p {color: #444444;}
                                     .header-type-9 .header-bar__module .btn {color:#ffffff;background: #075ac9;} 
@@ -71,8 +71,8 @@
                                     .header-type-9 a.icon-cart-arrow i {background:#075ac9;color:#ffffff;}
                                     .header-type-9 a.icon-cart-arrow i:hover {background:#35c7df;color:#ffffff;}
                                     @media (max-width: 767px) { 
-                                    .header-type-9 a.icon-cart-arrow i,.header-type-9 .search-bar__form button.res_btn,.header-mobile #showLeftPush  {color: ;}
-                                    .header-type-9 a.icon-cart-arrow:hover i,.header-type-9 .search-bar__form button.res_btn:hover,.header-mobile #showLeftPush:hover {color: ;}
+                                    .header-type-9 a.icon-cart-arrow i,.header-type-9 .search-bar__form button.res_btn,.header-mobile #showLeftPush  {color: rgb(69, 206, 160);}
+                                    .header-type-9 a.icon-cart-arrow:hover i,.header-type-9 .search-bar__form button.res_btn:hover,.header-mobile #showLeftPush:hover {color: rgb(69, 206, 160);}
                                     .header-type-9 a.icon-cart-arrow i,.header-type-9 .search-bar__form button.res_btn,.header-mobile #showLeftPush {background:#075ac9;color:#ffffff;}
                                     .header-type-9 a.icon-cart-arrow i:hover,.header-type-9 .search-bar__form button.res_btn:hover,.header-mobile #showLeftPush:hover {background:#35c7df;color:#ffffff;}
                                     }
@@ -86,17 +86,17 @@
                                     .header-type-9 .header_currency ul li.currency:hover:after {border-top-color:#35c7df;}
                                     .header-type-9 .header_currency ul li.currency:after {border-top-color:#ffffff;}
                                     .header-type-9 .header_currency option {background:#ffffff;color:#444444;}
-                                    .header-type-9 .dt-sc-toggle-content {background:;}
-                                    .header-type-9 .inline-list li a {color:;}
-                                    .header-type-9 .inline-list li a:hover {color:;}
-                                    .header-type-9 .init:hover {color:;}
+                                    .header-type-9 .dt-sc-toggle-content {background:rgb(69, 206, 160);}
+                                    .header-type-9 .inline-list li a {color:rgb(69, 206, 160);}
+                                    .header-type-9 .inline-list li a:hover {color:rgb(69, 206, 160);}
+                                    .header-type-9 .init:hover {color:rgb(69, 206, 160);}
                                     /* Header borders */
                                     .header-mobile { position: relative; float: left; width:100%; }
                                     .header-mobile #showLeftPush.active .fa-times{display:block;line-height:46px;}
                                     .header-mobile #showLeftPush { display: inline-block;font-size: 16px;text-align: center;  cursor: pointer;height:40px;line-height:40px;width:40px;  }
-                                 </style>
-                                 <style>
-                                 .slick-active .slider-content .slide-button:before{ background:}
+                                
+                                 
+                                 .slick-active .slider-content .slide-button:before{ background:rgb(69, 206, 160);}
                                  @media screen and (min-width: 320px) and (max-width: 767px) {}
                                  .slider-1542369873506-list .btn { background:#ffffff;color:#000000;background-image: linear-gradient(-45deg, #ffffff, #075ac9);box-shadow: 0 4px 10px -1px rgba(0, 0, 0, 0.2), 0 4px 6px 1px rgba(0, 0, 0, 0.05), 0 1px 2px 1px transparent inset, 0 18px 32px -2px rgba(255, 255, 255, 0.1) inset; }
                                  .slider-1542369873506-list .btn:hover { background:#075ac9;color:#fff; }
@@ -127,7 +127,7 @@
                                           box-shadow: 0 0 0 35px rgba(0, 0, 0, 0);
                                           }
                                           }
-                                          .triangle-icon-block-a .icon i{color:;}
+                                          .triangle-icon-block-a .icon i{color:rgb(69, 206, 160);}
                                           .triangle-icon-block-a .icon_wrapper:hover .icon i{color:#35c7df;}
                                           .triangle-icon-block-a .icon_wrapper:hover h4 {color:#35c7df !important;}
                                     
@@ -157,12 +157,12 @@
                                        }
                                        }
                                    
-                                    .testimonial-type-11{background:;}
-                                    .testimonial-type-11 .owl-theme .owl-controls .owl-page span{background:;}
+                                    .testimonial-type-11{background:rgb(69, 206, 160);}
+                                    .testimonial-type-11 .owl-theme .owl-controls .owl-page span{background:rgb(69, 206, 160);}
                                     .testimonial-type-11 .authorimg::before{    border-bottom: 40px solid ;}
                                     .testimonial-type-11 .authorimg{border:3px solid ;}
-                                    .testimonial-type-11 blockquote q::before , .testimonial-type-11 blockquote q::after{color:;}
-                                    .testimonial-type-11  .owl-prev , .testimonial-type-11 .owl-next{line-height:30px;background:;color:;}
+                                    .testimonial-type-11 blockquote q::before , .testimonial-type-11 blockquote q::after{color:rgb(69, 206, 160);}
+                                    .testimonial-type-11  .owl-prev , .testimonial-type-11 .owl-next{line-height:30px;background:rgb(69, 206, 160);color:rgb(69, 206, 160);}
                                     .testimonial-type-11 .slick-slide.slick-current.slick-active.slick-center {opacity:1;}
                                     .testimonial-type-11 .slick-slide {opacity:0.08;}
                                
