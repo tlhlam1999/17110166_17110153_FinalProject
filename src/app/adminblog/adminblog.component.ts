@@ -1,6 +1,10 @@
 import { Component, OnInit} from '@angular/core';
 import { Router } from '@angular/router';
 import {FormControl} from '@angular/forms';
+import {AdminblogService} from './adminblog.service'
+import {Adminblog} from './adminblog.model'
+import { MatDialog } from '@angular/material/dialog';
+import {AdminblogDialogComponent} from './dialog-adminblog/dialog-adminblog.component'
 @Component({
     selector: 'app-adminblog',
     templateUrl: './adminblog.component.html',
@@ -9,11 +13,19 @@ import {FormControl} from '@angular/forms';
 export class AdminblogComponent implements OnInit {
 
  
-    constructor(private router: Router ) {}
+    constructor(private router: Router,private service:AdminblogService,public dialog: MatDialog ) {}
 
     ngOnInit() {
     }
-    getPath(){
-      return this.router.url;
+    openDialog(): void {
+      const dialogRef = this.dialog.open(AdminblogDialogComponent, {
+        width: '500px',
+        height: '400px',
+      });
+  
+      dialogRef.afterClosed().subscribe(result => {
+        console.log('The dialog was closed');
+        console.log(result);
+      });
     }
 }

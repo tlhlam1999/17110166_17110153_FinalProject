@@ -25,13 +25,13 @@
           </li>
           <li class="nav-item ">
             <a class="nav-link" [routerLink]="['/admintable']">
-              <i class="material-icons">content_paste</i>
+              <i class="fas fa-piggy-bank"></i>
               <p>Sales</p>
             </a>
           </li>
           <li class="nav-item active ">
             <a class="nav-link" [routerLink]="['/adminblog']">
-              <i class="material-icons">library_books</i>
+              <i class="fab fa-blogger"></i>
               <p>Blogs</p>
             </a>
           </li>
@@ -43,13 +43,13 @@
           </li>
           <li class="nav-item ">
             <a class="nav-link" [routerLink]="['/editingredients']">
-              <i class="material-icons">location_ons</i>
+              <i class="fas fa-atom"></i>
               <p>Ingredients</p>
             </a>
           </li>
           <li class="nav-item ">
             <a class="nav-link" [routerLink]="['/adminbrands']">
-              <i class="material-icons">notifications</i>
+              <i class="fas fa-sticky-note"></i>
               <p>Brands</p>
             </a>
           </li>
@@ -328,60 +328,7 @@
               <div class="card-body">
                   
                 <form>
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="form-group">
-                        <label class="bmd-label-floating">Fist Name</label>
-                        <input type="text" class="form-control">
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="form-group">
-                        <label class="bmd-label-floating">Last Name</label>
-                        <input type="text" class="form-control">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-12">
-                      <div class="form-group">
-                        <label class="bmd-label-floating">Tên Blog</label>
-                        <input type="text" class="form-control">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-4">
-                      <div class="form-group">
-                        <label class="bmd-label-floating">City</label>
-                        <input type="text" class="form-control">
-                      </div>
-                    </div>
-                    <div class="col-md-4">
-                      <div class="form-group">
-                        <label class="bmd-label-floating">Country</label>
-                        <input type="text" class="form-control">
-                      </div>
-                    </div>
-                    <div class="col-md-4">
-                      <div class="form-group">
-                        <label class="bmd-label-floating">Postal Code</label>
-                        <input type="text" class="form-control">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-12">
-                      <div class="form-group">
-                        <label>Nội dung</label>
-                        <div class="form-group">
-                    
-                          <textarea class="form-control" rows="5"></textarea>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <button type="submit" class="btn btn-primary pull-right">UPDATE BLOG</button>
+                  <button type="submit" class="btn btn-primary pull-right" (click)="openDialog()">Thêm Blog</button>
                   <div class="clearfix"></div>
                 </form>
              

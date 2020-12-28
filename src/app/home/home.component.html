@@ -13,55 +13,9 @@
                         <div class="">
                            <div id="header-landing" class="sticky-animate">
                               <div id="shopify-section-header-model-9" class="shopify-section">
-                                 <div class="top_bar top-bar-type-9" style="background:#075ac9;">
-                                    <div class="container">
-                                       <div class="grid__item">
-                                          <div class="header_social top_bar_left">
-                                             <div class="grid__item wide--one-third post-large--one-third large--one-third medium--one-half small--one-half">
-                                                <ul class="menu_topbar_right grid__item">
-                                                   <li class="header_currency">
-                                                      <ul class="tbl-list">
-                                                         <li class="currency dropdown-parent uppercase currency-block">
-                                                            <div class="selector-arrow">
-                                                               <select class="currencies_src" id="currencies">
-                                                                  <option data-currency="USD"  selected  value="USD">USD</option>
-                                                                  <option data-currency="EUR"  value="EUR">EUR</option>
-                                                                  <option data-currency="GBP"  value="GBP">GBP</option>
-                                                                  <option data-currency="AUD"  value="AUD">AUD</option>
-                                                                  <option data-currency="INR"  value="INR">INR</option>
-                                                                  <option data-currency="JPY"  value="JPY">JPY</option>
-                                                                  <option data-currency="CAD"  value="CAD">CAD</option>
-                                                                  <option data-currency="CNY"  value="CNY">CNY</option>
-                                                                  <option data-currency="AED"  value="AED">AED</option>
-                                                                  <option data-currency="RUB"  value="RUB">RUB</option>
-                                                               </select>
-                                                            </div>
-                                                         </li>
-                                                      </ul>
-                                                   </li>
-                                                </ul>
-                                             </div>
-                                             <div class="grid__item wide--one-third post-large--one-third large--one-third medium-down--hide">
-                                                <ul class="menu_bar_left grid__item">
-                                                   <li class=" phone_txt"><span>Welcome to Kure-Demo.</span> </li>
-                                                   <li class="notification_text"><span style="color:rgb(69, 206, 160);"></span>
-                                                      <a class="link" href="index.html">Shop Now</a>      
-                                                   </li>
-                                                </ul>
-                                             </div>
-                                             <div class="grid__item wide--one-third post-large--one-third large--one-third medium--one-half small--one-half">
-                                                <ul class="menu_bar_left grid__item">
-                                                   <li class="medium-down--hide phone_no"><span>Call us: 0123-456-789</span></li>
-                                                   <li class="top-wish">
-                                                      <a [routerLink]="['/wishlist']"><i class="fa fa-heart"></i>Wishlist</a>
-                                                   </li>
-                                                </ul>
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
+                                 
                                  <app-header></app-header>
+               
                                  
                               </div>
                               <div class="desktop-megamenu">
@@ -92,7 +46,7 @@
                                                                   <ul class="dropdown">
                                                                      <!-- Menu level 3 -->
                                                                      <li>
-                                                                        <a href="products/calories-meter" >
+                                                                        <a [routerLink]="['/allproducts']" >
                                                                         Bioderma 
                                                                         </a>
                                                                      </li>
@@ -190,12 +144,12 @@
                                                                               </a>
                                                                               <div class="details">
                                                                                  <a class="product-title" href="products/digital-pressure-machine">      
-                                                                                 Digital Pressure Machine      
+                                                                                 {{this.NameProduct}}      
                                                                                  </a>
                                                                                  <span class="shopify-product-reviews-badge" data-id="2241007353920"></span>
                                                                                  <div class="price-box">
                                                                                     <p class="regular-product">
-                                                                                       <span><span class=money>$329.00</span></span>
+                                                                                       <span><span class=money>{{this.PointPro}} </span></span>
                                                                                     </p>
                                                                                  </div>
                                                                               </div>
@@ -451,171 +405,7 @@
                                                          </div>
                                                       </div>
                                                    </li>
-                                                   <li class=" dropdown  mega-menu ">
-                                                      <a  href="collections/best-seller" class="">
-                                                      <span>         
-                                                      Trang điểm     
-                                                      </span>       
-                                                      </a> 	
-                                                      <div class="site-nav-dropdown">
-                                                         <div class="container   style_4">
-                                                            <div class="col-1 parent-mega-menu">
-                                                               <div class="inner col-xs-12 col">
-                                                                  <!-- Menu level 2 -->
-                                                                  <a  href="products/cleaning-scissor" class=" ">
-                                                                  Trang điểm mặt 
-                                                                  </a>
-                                                                  <ul class="dropdown">
-                                                                     <!-- Menu level 3 -->
-                                                                     <li>
-                                                                        <a href="products/cleaning-scissor" >
-                                                                        Kem lót 
-                                                                        </a>
-                                                                     </li>
-                                                                     <!-- Menu level 3 -->
-                                                                     <li>
-                                                                        <a href="products/celsius-meter" >
-                                                                        Kem nền
-                                                                        </a>
-                                                                     </li>
-                                                                     <!-- Menu level 3 -->
-                                                                     <li>
-                                                                        <a href="products/celsius-meter" >
-                                                                        Phấn nước 
-                                                                        </a>
-                                                                     </li>
-                                                                     <!-- Menu level 3 -->
-                                                                     <li>
-                                                                        <a href="products/celsius-meter" >
-                                                                        Che khuyết điểm 
-                                                                        </a>
-                                                                     </li>
-                                                                     <!-- Menu level 3 -->
-                                                                     <li>
-                                                                        <a href="products/celsius-meter" >
-                                                                        Phấn phủ
-                                                                        </a>
-                                                                     </li>
-                                                                  </ul>
-                                                               </div>
-                                                               <div class="inner col-xs-12 col">
-                                                                  <!-- Menu level 2 -->
-                                                                  <a  href="products/dental-floss-box" class=" ">
-                                                                  Trang điểm vùng mắt 
-                                                                  </a>
-                                                                  <ul class="dropdown">
-                                                                     <!-- Menu level 3 -->
-                                                                     <li>
-                                                                        <a href="products/dental-floss-box" >
-                                                                        Chuốt mi/mắt 
-                                                                        </a>
-                                                                     </li>
-                                                                     <!-- Menu level 3 -->
-                                                                     <li>
-                                                                        <a href="products/celsius-meter" >
-                                                                        Kẻ mắt 
-                                                                        </a>
-                                                                     </li>
-                                                                     <!-- Menu level 3 -->
-                                                                     <li>
-                                                                        <a href="products/dental-floss-box" >
-                                                                        Kẻ chân mày 
-                                                                        </a>
-                                                                     </li>
-                                                                     <!-- Menu level 3 -->
-                                                                     <li>
-                                                                        <a href="products/dental-floss-box" >
-                                                                        Phấn mắt 
-                                                                        </a>
-                                                                     </li>
-                                                                     <!-- Menu level 3 -->
-                                                                     <li>
-                                                                        <a href="products/cleaning-scissor" >
-                                                                        Bộ trang điểm mắt
-                                                                        </a>
-                                                                     </li>
-                                                                  </ul>
-                                                               </div>
-                                                               <div class="inner col-xs-12 col">
-                                                                  <!-- Menu level 2 -->
-                                                                  <a  href="products/digital-pressure-machine" class=" ">
-                                                                  Trang điểm môi 
-                                                                  </a>
-                                                                  <ul class="dropdown">
-                                                                     <!-- Menu level 3 -->
-                                                                     <li>
-                                                                        <a href="products/cleaning-scissor" >
-                                                                        Son lì 
-                                                                        </a>
-                                                                     </li>
-                                                                     <!-- Menu level 3 -->
-                                                                     <li>
-                                                                        <a href="products/calories-meter" >
-                                                                        Son kem 
-                                                                        </a>
-                                                                     </li>
-                                                                     <!-- Menu level 3 -->
-                                                                     <li>
-                                                                        <a href="products/celsius-meter" >
-                                                                        Son bóng 
-                                                                        </a>
-                                                                     </li>
-                                                                     <!-- Menu level 3 -->
-                                                                     <li>
-                                                                        <a href="products/cleaning-scissor" >
-                                                                        Son dưỡng 
-                                                                        </a>
-                                                                     </li>
-                                                                     <!-- Menu level 3 -->
-                                                                     <li>
-                                                                        <a href="products/cleaning-scissor" >
-                                                                        Chì kẻ môi
-                                                                        </a>
-                                                                     </li>
-                                                                  </ul>
-                                                               </div>
-                                                               <div class="inner col-xs-12 col">
-                                                                  <!-- Menu level 2 -->
-                                                                  <a  href="products/calories-meter" class=" ">
-                                                                  Dụng cụ trang điểm 
-                                                                  </a>
-                                                                  <ul class="dropdown">
-                                                                     <!-- Menu level 3 -->
-                                                                     <li>
-                                                                        <a href="products/cleaning-scissor" >
-                                                                        Bộ cọ 
-                                                                        </a>
-                                                                     </li>
-                                                                     <!-- Menu level 3 -->
-                                                                     <li>
-                                                                        <a href="products/calories-meter" >
-                                                                        Túi đựng 
-                                                                        </a>
-                                                                     </li>
-                                                                     <!-- Menu level 3 -->
-                                                                     <li>
-                                                                        <a href="products/digital-pressure-machine" >
-                                                                        Bấm mi 
-                                                                        </a>
-                                                                     </li>
-                                                                     <!-- Menu level 3 -->
-                                                                     <li>
-                                                                        <a href="products/celsius-meter" >
-                                                                        Giấy thấm dầu 
-                                                                        </a>
-                                                                     </li>
-                                                                     <!-- Menu level 3 -->
-                                                                     <li>
-                                                                        <a href="products/cleaning-scissor" >
-                                                                        Lông mi giả
-                                                                        </a>
-                                                                     </li>
-                                                                  </ul>
-                                                               </div>
-                                                            </div>
-                                                         </div>
-                                                      </div>
-                                                   </li>
+ 
                                                    <li class=" dropdown  mega-menu ">
                                                       <a  [routerLink]="['/blogs']" class="">
                                                       <span>         
@@ -940,11 +730,11 @@
                                                             </div>
                                                          </div>
                                                          <div class="product-detail">
-                                                            <a href="https://kure-demo.myshopify.com/collections/best-seller/products/celsius-meter" class="grid-link__title">Celsius Meter</a> 
+                                                            <a href="https://kure-demo.myshopify.com/collections/best-seller/products/celsius-meter" class="grid-link__title"> {{this.NameProduct}}</a> 
                                                             <div class="grid-link__meta">
                                                                <div class="product_price">
                                                                   <div class="grid-link__org_price" id="ProductPrice">
-                                                                     <span> <span class=money>$319.00</span></span>
+                                                                     <span> <span class=money><i class="fas fa-seedling"></i> {{this.PointPro}}</span></span>
                                                                   </div>
                                                                </div>
                                                             </div>

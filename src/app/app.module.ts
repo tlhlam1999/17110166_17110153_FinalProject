@@ -31,10 +31,16 @@ import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatListModule } from '@angular/material/list';
 import { MatSelectModule } from '@angular/material/select';
+import {ProductDialogComponent} from './addproducts/dialog-addproduct/dialog-addproduct.component'
 import { MatTableModule } from '@angular/material/table'
 import {CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
 import { BrandService } from './adminbrands/shared/adminbrands.service';
 import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
+import { MatDialogModule, MatDialogRef } from '@angular/material/dialog';
+import {AdminblogDialogComponent} from './adminblog/dialog-adminblog/dialog-adminblog.component'
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -60,6 +66,8 @@ import { HttpClientModule } from '@angular/common/http';
     AdminbrandsComponent,
     HeaderComponent,
     FooterComponent,
+    ProductDialogComponent,
+    AdminblogDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -72,10 +80,18 @@ import { HttpClientModule } from '@angular/common/http';
     MatButtonModule,
     MatListModule,
     MatSelectModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule,
+    FormsModule,
+    MatDialogModule
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
-  providers: [BrandService],
-  bootstrap: [AppComponent]
+  providers: [BrandService,
+    {
+      provide: MatDialogRef,
+      useValue: {}
+    },],
+  bootstrap: [AppComponent],
+  
 })
 export class AppModule { }

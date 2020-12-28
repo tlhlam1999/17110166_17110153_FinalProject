@@ -1,20 +1,59 @@
 import { Component, OnInit} from '@angular/core';
-import { Router } from '@angular/router';
-import {ProductService} from "../allproducts/allproduct.service"
+import {AllProductService} from "../allproducts/allproduct.service"
+import { UserLogin } from '../staticvariable';
+import {Product} from '../addproducts/product.model'
+import { ActivatedRoute, Router } from '@angular/router';
 @Component({
     selector: 'app-allproducts',
     templateUrl: './allproducts.component.html',
     styleUrls: ['./allproducts.component.css']
 })
 export class AllproductsComponent implements OnInit {
-    public id : string
-    constructor(private router: Router ,private service:ProductService) {}
+  public products:any
+  public productlist=new Array<Product>()
+  public product:Product
+  public m_returnUrl: string;
+  check:boolean
+    constructor(private m_route: ActivatedRoute, private m_router: Router ,private service:AllProductService) {}
 
     ngOnInit() {
-      this.getPath()
+      
+      this.check=UserLogin.LoginState
+      this.getProductList()
     }
-    getPath(){
-      const product = this.service.getProduct("123")
-      this.id = product["iD3code"]
+    async getProductList(){
+      this.products = await this.service.getallProduct()
+      console.log(this.products)
+      for(let i=0;i<this.products.length;i++)
+      {
+        let product = new Product()
+        product.ID3code = this.products[i].iD3code
+        product.IDBrand = this.products[i].idBrand
+        product.IDSkintype = this.products[i].idSkintype
+        product.NameProduct = this.products[i].nameProduct
+        product.Description = this.products[i].description
+        product.Image = this.products[i].image
+        product.PointProduct = this.products[i].pointProduct
+        this.productlist.push(product)
+      }
+      
     }
+  getImageMime(base64: string): string
+  {
+    var tempString=String(base64);
+    if (tempString.charAt(0)=='/') return 'jpg';
+    else if (tempString.charAt(0)=='R') return "gif";
+    else if(tempString.charAt(0)=='i') return 'png';
+    else if(tempString.charAt(0)=="A") return "mp4";
+    else return 'jpeg';
+  }
+  getImageSource(base64: string): string
+  {
+    return `data:image/${this.getImageMime(base64)};base64,${base64}`; 
+  }
+  public getNavigation( id) {
+    this.m_returnUrl = this.m_route.snapshot.queryParams['returnUrl'] || '/productdetails/'+id;
+    UserLogin.ID3tempt = id
+    this.m_router.navigateByUrl(this.m_returnUrl, {skipLocationChange:true});
+}
 }

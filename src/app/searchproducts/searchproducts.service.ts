@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 @Injectable({
     providedIn: 'root'
 })
-export class AllProductService {
+export class SearchProductsService {
     constructor(private http: HttpClient) {
     }
     private urlAPI = "api/Product/";
@@ -11,16 +11,6 @@ export class AllProductService {
     getProduct = async (id) => {
         try {
             const result = await this.http.get(this.urlAPI+id).toPromise();
-            return result;
-        }
-        catch (e) {
-            console.log(e);
-            // this.removeToken();
-        }
-    }
-    getallProduct = async () => {
-        try {
-            const result = await this.http.get(this.urlAPI).toPromise();
             return result;
         }
         catch (e) {
