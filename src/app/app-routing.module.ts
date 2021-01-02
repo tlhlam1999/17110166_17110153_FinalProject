@@ -20,7 +20,7 @@ import {SearchingredientsComponent} from './searchingredients/searchingredients.
 import {SearchproductsComponent} from './searchproducts/searchproducts.component';
 import {SearchblogsComponent} from './searchblogs/searchblogs.component';
 import {AdminbrandsComponent} from './adminbrands/adminbrands.component';
-
+import {BlogdetailComponent} from './blogdetail/blogdetail.component';
 const routes: Routes = [
   { path: 'home',             component: HomeComponent },
   { path: 'blogs',             component: BlogsComponent },
@@ -42,6 +42,7 @@ const routes: Routes = [
   { path: 'searchproducts',             component: SearchproductsComponent },
   { path: 'searchblogs',             component: SearchblogsComponent },
   { path: 'adminbrands',             component: AdminbrandsComponent },
+  { path: 'blogdetail/:id',             component: BlogdetailComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full' }
 ];
 

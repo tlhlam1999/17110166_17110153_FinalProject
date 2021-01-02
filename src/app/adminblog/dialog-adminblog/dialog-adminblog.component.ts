@@ -46,14 +46,14 @@ import {Adminblog} from '../adminblog.model'
         try{
           const formData = new FormData();
           if (Image) {
-            formData.append('iDBlog', this.adminblog.IDBlog);
-            formData.append('iDTopic',this.adminblog.IDTopic)
-            formData.append('iDUser',this.adminblog.IDUser)
-            formData.append('iDComposer',this.adminblog.IDComposer)
-            formData.append('Heading',this.adminblog.Heading)
+            formData.append('idBlog', this.adminblog.IDBlog);
+            formData.append('idTopic',this.adminblog.IDTopic)
+            formData.append('idUser',this.adminblog.IDUser)
+            formData.append('idComposer',this.adminblog.IDComposer)
+            formData.append('heading',this.adminblog.Heading)
             formData.append('description',this.adminblog.Description)
             formData.append('image',this.Image)
-            formData.append('disabled',this.adminblog.Disabled.toString())
+            formData.append('disabledBlog',this.adminblog.Disabled.toString())
             
             this.service.createBlog(formData);
             alert("Create succesfully !")

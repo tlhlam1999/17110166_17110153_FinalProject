@@ -22,6 +22,7 @@ import {Product} from '../product.model'
             return false;
           }
         this.product = new Product()
+        this.product.ID3code="Pro"+Math.floor(Math.random()*10000).toString()
     }
     onSelectFile(event) {
         if (event.target.files && event.target.files[0]) {
@@ -47,12 +48,14 @@ import {Product} from '../product.model'
           if (Image) {
             formData.append('image', this.Image);
             formData.append('description',this.product.Description)
+            formData.append('linktobuy',this.product.Linktobuy)
             formData.append('nameProduct',this.product.NameProduct)
             formData.append('pointProduct',this.product.PointProduct.toString())
             formData.append('disabledPro',this.product.DisabledPro.toString())
             formData.append('iD3code',this.product.ID3code)
-            formData.append('iDBrand',this.product.IDBrand)
-            formData.append('iDSkinType',this.product.IDSkintype)
+            formData.append('idBrand',this.product.IDBrand)
+            formData.append('idSkintype',this.product.IDSkintype)
+            formData.append('idProductType',this.product.IDProductType)
             this.service.createTrip(formData);
             alert("Create succesfully !")
             this.onNoClick()

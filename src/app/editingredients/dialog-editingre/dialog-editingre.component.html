@@ -1,0 +1,43 @@
+<h2><strong>THÊM THÀNH PHẦN</strong></h2>
+<form class="example-form">
+    <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label class="bmd-label-floating"> <strong>TÊN THÀNH PHẦN</strong></label>
+            <input type="text" class="form-control" required="required" [(ngModel)]="this.editingre.NameIngre" [ngModelOptions]="{standalone: true}">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label class="bmd-label-floating"><strong>CHỈ SỐ KÍCH ỨNG</strong> </label>
+            <input type="text" class="form-control" required="required" [(ngModel)]="this.editingre.PointIngre" [ngModelOptions]="{standalone: true}">
+          </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+          <div class="form-group">
+            <label><strong>CÔNG DỤNG</strong> </label>
+            <div class="form-group">
+        
+              <textarea class="form-control" rows="5" required="required" [(ngModel)]="this.editingre.Uses" [ngModelOptions]="{standalone: true}"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="form-group">
+            <label><strong>CHỨC NĂNG</strong> </label>
+            <div class="form-group">
+        
+              <textarea class="form-control" rows="5" required="required" [(ngModel)]="this.editingre.Function" [ngModelOptions]="{standalone: true}"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+
+    <button class="btn btn-primary" mat-button (click)="onSave()">Save</button>
+    <button class="btn btn-danger right" mat-button (click)="onNoClick()">Cancel</button>

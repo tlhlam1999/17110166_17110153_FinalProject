@@ -18,8 +18,8 @@ export class AddproductsComponent implements OnInit {
     
      openDialog(): void {
       const dialogRef = this.dialog.open(ProductDialogComponent, {
-        width: '500px',
-        height: '400px',
+        width: '900px',
+        height: '700px',
       });
   
       dialogRef.afterClosed().subscribe(result => {

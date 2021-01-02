@@ -36,7 +36,7 @@
             </a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link" [routerLink]="['/adminproducts']">
+            <a class="nav-link" [routerLink]="['/addproducts']">
               <i class="material-icons">bubble_chart</i>
               <p>Products</p>
             </a>
@@ -373,42 +373,7 @@
               <div class="card-body">
                   
                 <form>
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="form-group">
-                        <label class="bmd-label-floating">Tên thành phần</label>
-                        <input type="text" class="form-control">
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="form-group">
-                        <label class="bmd-label-floating">Điểm </label>
-                        <input type="text" class="form-control">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-12">
-                      <select name="brand" class="custom-select mb-3">
-                                  
-                        <option selected>Công dụng</option>
-                        <option value="uses1">Uses 1</option>
-                        <option value="uses2">Uses 2</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-12">
-                      <div class="form-group">
-                        <label>Chức năng</label>
-                        <div class="form-group">
-                    
-                          <textarea class="form-control" rows="5"></textarea>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <button type="submit" class="btn btn-primary pull-right">UPDATE THÀNH PHẦN</button>
+                  <button type="submit" class="btn btn-primary pull-right" (click)="openDialog()">THÊM THÀNH PHẦN</button>
                   <div class="clearfix"></div>
                 </form>
              

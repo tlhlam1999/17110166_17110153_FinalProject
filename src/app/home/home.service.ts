@@ -18,4 +18,14 @@ export class HomeService {
             // this.removeToken();
         }
     }
+    getallProduct = async () => {
+        try {
+            const result = await this.http.get(this.urlAPI).toPromise();
+            return result;
+        }
+        catch (e) {
+            console.log(e);
+            // this.removeToken();
+        }
+    }
 }

@@ -1,6 +1,8 @@
 import { Component, OnInit} from '@angular/core';
 import { Router } from '@angular/router';
-
+import { MatDialog } from '@angular/material/dialog';
+import {EditingredientsDialogComponent} from './dialog-editingre/dialog-editingre.component'
+import {EditingredientsService} from './editingredients.service'
 @Component({
     selector: 'app-editingredients',
     templateUrl: './editingredients.component.html',
@@ -8,11 +10,20 @@ import { Router } from '@angular/router';
 })
 export class EditingredientsComponent implements OnInit {
 
-    constructor(private router: Router ) {}
+    constructor(private router: Router,private service:EditingredientsService,public dialog: MatDialog  ) {}
 
     ngOnInit() {
     }
-    getPath(){
-      return this.router.url;
+    openDialog(): void {
+      const dialogRef = this.dialog.open(EditingredientsDialogComponent, {
+        width: '900px',
+        height: '700px',
+      });
+  
+      dialogRef.afterClosed().subscribe(result => {
+        console.log('The dialog was closed');
+        console.log(result);
+      });
     }
+    
 }

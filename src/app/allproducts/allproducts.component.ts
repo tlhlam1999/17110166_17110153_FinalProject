@@ -32,6 +32,7 @@ export class AllproductsComponent implements OnInit {
         product.IDSkintype = this.products[i].idSkintype
         product.NameProduct = this.products[i].nameProduct
         product.Description = this.products[i].description
+        product.Linktobuy = this.products[i].linktobuy
         product.Image = this.products[i].image
         product.PointProduct = this.products[i].pointProduct
         this.productlist.push(product)

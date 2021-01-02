@@ -16,6 +16,7 @@ export class ProductDetailsComponent implements OnInit {
   public DescriptionPro:string=''    
   public ImagePro:string='' 
   public PointPro: Float32Array
+  public Linktobuy:string=''    
   
     constructor(private router: Router,private service:ProductdetailsService ) {}
 
@@ -32,6 +33,7 @@ export class ProductDetailsComponent implements OnInit {
       this.DescriptionPro = product["description"]
       this.ImagePro = product["image"]
       this.PointPro = product["pointProduct"]
+      this.Linktobuy = product["linktobuy"]
       
     }
     getImageMime(base64: string): string

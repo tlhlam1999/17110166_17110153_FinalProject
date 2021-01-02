@@ -22,6 +22,7 @@ import {SearchingredientsComponent} from './searchingredients/searchingredients.
 import {SearchproductsComponent} from './searchproducts/searchproducts.component';
 import {SearchblogsComponent} from './searchblogs/searchblogs.component';
 import {AdminbrandsComponent} from './adminbrands/adminbrands.component';
+import {BlogdetailComponent} from './blogdetail/blogdetail.component';
 import {AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { OwlModule } from 'ngx-owl-carousel';
@@ -40,7 +41,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
 import { MatDialogModule, MatDialogRef } from '@angular/material/dialog';
 import {AdminblogDialogComponent} from './adminblog/dialog-adminblog/dialog-adminblog.component'
-
+import {EditingredientsDialogComponent} from './editingredients/dialog-editingre/dialog-editingre.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -67,7 +68,9 @@ import {AdminblogDialogComponent} from './adminblog/dialog-adminblog/dialog-admi
     HeaderComponent,
     FooterComponent,
     ProductDialogComponent,
-    AdminblogDialogComponent
+    AdminblogDialogComponent,
+    EditingredientsDialogComponent,
+    BlogdetailComponent
   ],
   imports: [
     BrowserModule,

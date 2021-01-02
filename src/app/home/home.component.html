@@ -26,16 +26,16 @@
                                              <div class="menu-tool">
                                                 <ul class="site-nav">
                                                    <li class=" ">
-                                                      <a  href="index.html" class="current">
+                                                      <a  href="index.html" class="current" class="site-nav">
                                                       <span>         
-                                                      Trang chủ     
+                                                      TRANG CHỦ    
                                                       </span>       
                                                       </a> 	
                                                    </li>
                                                    <li class=" dropdown  mega-menu ">
-                                                      <a  [routerLink]="['/allproducts']" class="">
+                                                      <a  [routerLink]="['/allproducts']" class="site-nav">
                                                       <span>         
-                                                      Thương hiệu     
+                                                      THƯƠNG HIỆU    
                                                       </span>       
                                                       </a> 	
                                                       <div class="site-nav-dropdown">
@@ -46,25 +46,25 @@
                                                                   <ul class="dropdown">
                                                                      <!-- Menu level 3 -->
                                                                      <li>
-                                                                        <a [routerLink]="['/allproducts']" >
+                                                                        <a [routerLink]="['/allproducts']" class="brand">
                                                                         Bioderma 
                                                                         </a>
                                                                      </li>
                                                                      <!-- Menu level 3 -->
                                                                      <li>
-                                                                        <a href="products/calories-meter" >
+                                                                        <a href="products/calories-meter" class="brand">
                                                                         Anessa 
                                                                         </a>
                                                                      </li>
                                                                      <!-- Menu level 3 -->
                                                                      <li>
-                                                                        <a href="products/calories-meter" >
+                                                                        <a href="products/calories-meter" class="brand">
                                                                         Cosrx 
                                                                         </a>
                                                                      </li>
                                                                         <!-- Menu level 3 -->
                                                                         <li>
-                                                                           <a href="products/calories-meter" >
+                                                                           <a href="products/calories-meter" class="brand">
                                                                            Dermalogica
                                                                            </a>
                                                                         </li>
@@ -75,26 +75,26 @@
                                                                   <ul class="dropdown">
                                                                      <!-- Menu level 3 -->
                                                                      <li>
-                                                                        <a href="products/calories-meter" >
+                                                                        <a href="products/calories-meter" class="brand">
                                                                         Exuviance
                                                                         </a>
                                                                      </li>
                                                                      <!-- Menu level 3 -->
                                                                      <li>
-                                                                        <a href="products/calories-meter" >
+                                                                        <a href="products/calories-meter" class="brand">
                                                                         Paula's Choice
                                                                         </a>
                                                                      </li>
                                                                      <!-- Menu level 3 -->
                                                                      <li>
-                                                                        <a href="products/calories-meter" >
+                                                                        <a href="products/calories-meter" class="brand">
                                                                         Klairs
                                                                         </a>
                                                                      </li>
                                                                   
                                                                      <!-- Menu level 3 -->
                                                                      <li>
-                                                                        <a href="products/calories-meter" >
+                                                                        <a href="products/calories-meter" class="brand">
                                                                         L'oreal
                                                                         </a>
                                                                      </li>
@@ -106,25 +106,25 @@
                                                                   <ul class="dropdown">
                                                                      <!-- Menu level 3 -->
                                                                      <li>
-                                                                        <a href="products/celsius-meter" >
+                                                                        <a href="products/celsius-meter" class="brand">
                                                                         La Roche-posay 
                                                                         </a>
                                                                      </li>
                                                                       <!-- Menu level 3 -->
                                                                       <li>
-                                                                        <a href="products/celsius-meter" >
+                                                                        <a href="products/celsius-meter" class="brand">
                                                                         Maybelline 
                                                                         </a>
                                                                         </li>
                                                                         <!-- Menu level 3 -->
                                                                       <li>
-                                                                        <a href="products/celsius-meter" >
+                                                                        <a href="products/celsius-meter" class="brand">
                                                                         Neostrata
                                                                         </a>
                                                                      </li>
                                                                        <!-- Menu level 3 -->
                                                                        <li>
-                                                                        <a href="products/celsius-meter" >
+                                                                        <a href="products/celsius-meter" class="brand">
                                                                         Obagi
                                                                         </a>
                                                                      </li>
@@ -137,30 +137,13 @@
                                                                <div class="col-left">
                                                                   <div class="widget-featured-product ">
                                                                      <div class="widget-product">
-                                                                        <div class="products-grid">
-                                                                           <div class="grid-item product-item " id="product-2241007353920">
-                                                                              <a href="products/digital-pressure-machine" class="product-grid-image">
-                                                                              <img src="https://cdn.shopify.com/s/files/1/0188/0503/0976/products/pdt2_large.jpg?v=1547027949" alt="Digital Pressure Machine">
-                                                                              </a>
-                                                                              <div class="details">
-                                                                                 <a class="product-title" href="products/digital-pressure-machine">      
-                                                                                 {{this.NameProduct}}      
-                                                                                 </a>
-                                                                                 <span class="shopify-product-reviews-badge" data-id="2241007353920"></span>
-                                                                                 <div class="price-box">
-                                                                                    <p class="regular-product">
-                                                                                       <span><span class=money>{{this.PointPro}} </span></span>
-                                                                                    </p>
-                                                                                 </div>
-                                                                              </div>
-                                                                           </div>
-                                                                        </div>
+                                                                        
                                                                      </div>
                                                                   </div>
                                                                </div>
                                                                <div class="col-right">
-                                                                  <a href="index.html" title="">
-                                                                  <img src="https://cdn.shopify.com/s/files/1/0188/0503/0976/files/megamenu2_2000x.jpg?v=1574920936" alt="" />
+                                                                  <a [routerLink]="['/allproducts']" title="">
+                                                                  <img src="/assets/images/th.jpg" alt="" />
                                                                   </a>
                                                                </div>
                                                             </div>
@@ -168,248 +151,66 @@
                                                       </div>
                                                    </li>
                                                    <li class=" dropdown  mega-menu ">
-                                                      <a  [routerLink]="['/allproducts']" class="">
+                                                      <a  [routerLink]="['/allproducts']" class="site-nav">
                                                       <span>         
-                                                      Skin Care     
+                                                      CHĂM SÓC DA
                                                       </span>       
                                                       </a> 	
                                                       <div class="site-nav-dropdown">
-                                                         <div class="container   style_3">
+                                                         <div class="container   style_4">
                                                             <div class="col-1 parent-mega-menu">
                                                                <div class="inner col-xs-12 col-sm-4">
                                                                   <!-- Menu level 2 -->
-                                                                  <a  href="products/calories-meter" class=" ">
+                                                                  <a  href="products/calories-meter" class="site-menu2">
                                                                   LÀM SẠCH & TẨY DA CHẾT 
                                                                   </a>
-                                                                  <ul class="dropdown">
-                                                                     <!-- Menu level 3 -->
-                                                                     <li>
-                                                                        <a href="products/calories-meter" >
-                                                                        Tẩy trang 
-                                                                        </a>
-                                                                     </li>
-                                                                     <!-- Menu level 3 -->
-                                                                     <li>
-                                                                        <a href="products/calories-meter" >
-                                                                        Sửa rửa mặt 
-                                                                        </a>
-                                                                     </li>
-                                                                     <!-- Menu level 3 -->
-                                                                     <li>
-                                                                        <a href="products/calories-meter" >
-                                                                        Toner & Xịt khoáng 
-                                                                        </a>
-                                                                     </li>
-                                                                        <!-- Menu level 3 -->
-                                                                        <li>
-                                                                           <a href="products/calories-meter" >
-                                                                           Tẩy da chết
-                                                                           </a>
-                                                                        </li>
-                                                                  </ul>
+                                                                 
                                                                </div>
                                                                <div class="inner col-xs-12 col-sm-4">
                                                                   <!-- Menu level 2 -->
-                                                                  <a  href="products/cleaning-scissor" class=" ">
+                                                                  <a  href="products/cleaning-scissor" class="site-menu2">
                                                                    ĐẶC TRỊ
                                                                   </a>
-                                                                  <ul class="dropdown">
-                                                                     <!-- Menu level 3 -->
-                                                                     <li>
-                                                                        <a href="products/calories-meter" >
-                                                                        Phục hồi da
-                                                                        </a>
-                                                                     </li>
-                                                                     <!-- Menu level 3 -->
-                                                                     <li>
-                                                                        <a href="products/calories-meter" >
-                                                                        Điều trị mụn
-                                                                        </a>
-                                                                     </li>
-                                                                     <!-- Menu level 3 -->
-                                                                     <li>
-                                                                        <a href="products/calories-meter" >
-                                                                        Thu nhỏ lỗ chân lông
-                                                                        </a>
-                                                                     </li>
-                                                                  
-                                                                     <!-- Menu level 3 -->
-                                                                     <li>
-                                                                        <a href="products/calories-meter" >
-                                                                        Dưỡng sáng/Làm trắng
-                                                                        </a>
-                                                                     </li>
-                                                                     
-                                                                  </ul>
+                                                                 
                                                                </div>
                                                                <div class="inner col-xs-12 col-sm-4">
                                                                   <!-- Menu level 2 -->
-                                                                  <a  href="products/calories-meter" class=" ">
+                                                                  <a  href="products/calories-meter" class="site-menu2">
                                                                   CẤP ẨM - KHÓA ẨM 
                                                                   </a>
-                                                                  <ul class="dropdown">
-                                                                     <!-- Menu level 3 -->
-                                                                     <li>
-                                                                        <a href="products/celsius-meter" >
-                                                                        Kem dưỡng ẩm 
-                                                                        </a>
-                                                                     </li>
-                                                                      <!-- Menu level 3 -->
-                                                                      <li>
-                                                                        <a href="products/celsius-meter" >
-                                                                        Dầu dưỡng ẩm 
-                                                                        </a>
-                                                                        </li>
-                                                                        <!-- Menu level 3 -->
-                                                                      <li>
-                                                                        <a href="products/celsius-meter" >
-                                                                        Kem đêm
-                                                                        </a>
-                                                                     </li>
-                                                                       <!-- Menu level 3 -->
-                                                                       <li>
-                                                                        <a href="products/celsius-meter" >
-                                                                        Kem ngày
-                                                                        </a>
-                                                                     </li>
-                                                                    
-                                                                  </ul>
+                                                                  
                                                                </div>
                                                                <div class="inner col-xs-12 col-sm-4">
                                                                   <!-- Menu level 2 -->
-                                                                  <a  href="products/calories-meter" class=" ">
+                                                                  <a  href="products/calories-meter" class="site-menu2">
                                                                   CHỐNG NẮNG 
                                                                   </a>
-                                                                  <ul class="dropdown">
-                                                                     <!-- Menu level 3 -->
-                                                                     <li>
-                                                                        <a href="products/celsius-meter" >
-                                                                        Vật lý 
-                                                                        </a>
-                                                                     </li>
-                                                                    <!-- Menu level 3 -->
-                                                                    <li>
-                                                                     <a href="products/celsius-meter" >
-                                                                     Hóa học
-                                                                     </a>
-                                                                  </li>
-                                                                  <!-- Menu level 3 -->
-                                                                  <li>
-                                                                     <a href="products/celsius-meter" >
-                                                                     Vật lý lai hóa học
-                                                                     </a>
-                                                                  </li>
-                                                                  <!-- Menu level 3 -->
-                                                                  <li>
-                                                                     <a href="products/celsius-meter" >
-                                                                     Có màu
-                                                                     </a>
-                                                                  </li>
-                                                                  </ul>
+                                                                 
                                                                </div>
-                                                               <div class="inner col-xs-12 col-sm-4">
-                                                                  <!-- Menu level 2 -->
-                                                                  <a  href="products/calories-meter" class=" ">
-                                                                  MẮT & MÔI & CỔ
-                                                                  </a>
-                                                                  <ul class="dropdown">
-                                                                     <!-- Menu level 3 -->
-                                                                     <li>
-                                                                        <a href="products/celsius-meter" >
-                                                                        Giảm quầng thâm mắt 
-                                                                        </a>
-                                                                     </li>
-                                                                     <!-- Menu level 3 -->
-                                                                     <li>
-                                                                        <a href="products/celsius-meter" >
-                                                                        Giảm nếp nhăn mắt 
-                                                                        </a>
-                                                                     </li>
-                                                                     <!-- Menu level 3 -->
-                                                                     <li>
-                                                                        <a href="products/celsius-meter" >
-                                                                        Dưỡng môi 
-                                                                        </a>
-                                                                     </li>
-                                                                     <!-- Menu level 3 -->
-                                                                     <li>
-                                                                        <a href="products/celsius-meter" >
-                                                                        Dưỡng cổ 
-                                                                        </a>
-                                                                     </li>
-                                                                    
-                                                                  </ul>
-                                                               </div>
-                                                               <div class="inner col-xs-12 col-sm-4">
-                                                                  <!-- Menu level 2 -->
-                                                                  <a  href="products/calories-meter" class=" ">
-                                                               
-                                                                     MẶT NẠ
-                                                                  </a>
-                                                                  <ul class="dropdown">
-                                                                     <!-- Menu level 3 -->
-                                                                     <li>
-                                                                        <a href="products/celsius-meter" >
-                                                                        Mặt nạ giấy 
-                                                                        </a>
-                                                                     </li>
-                                                                     <li>
-                                                                        <a href="products/celsius-meter" >
-                                                                        Mặt nạ dạng rửa 
-                                                                        </a>
-                                                                     </li>
-                                                                     <li>
-                                                                        <a href="products/celsius-meter" >
-                                                                        Mặt nạ lột 
-                                                                        </a>
-                                                                     </li>
-                                                                     <li>
-                                                                        <a href="products/celsius-meter" >
-                                                                        Mặt nạ ngủ
-                                                                        </a>
-                                                                     </li>
-                                                                  </ul>
-                                                               </div>
+                             
+                                                              
                                                             </div>
-                                                            <div class="col-2">
-                                                               <div class="col-left">
-                                                                  <div class="widget-featured-product ">
-                                                                     <div class="widget-product">
-                                                                        <div class="products-grid">
-                                                                           <div class="grid-item product-item " id="product-2241007353920">
-                                                                              <a href="products/digital-pressure-machine" class="product-grid-image">
-                                                                              <img src="https://cdn.shopify.com/s/files/1/0188/0503/0976/products/pdt2_large.jpg?v=1547027949" alt="Digital Pressure Machine">
-                                                                              </a>
-                                                                              <div class="details">
-                                                                                 <a class="product-title" href="products/digital-pressure-machine">      
-                                                                                 Digital Pressure Machine      
-                                                                                 </a>
-                                                                                 <span class="shopify-product-reviews-badge" data-id="2241007353920"></span>
-                                                                                 <div class="price-box">
-                                                                                    <p class="regular-product">
-                                                                                       <span><span class=money>$329.00</span></span>
-                                                                                    </p>
-                                                                                 </div>
-                                                                              </div>
-                                                                           </div>
-                                                                        </div>
-                                                                     </div>
-                                                                  </div>
-                                                               </div>
-                                                               <div class="col-right">
-                                                                  <a href="index.html" title="">
-                                                                  <img src="https://cdn.shopify.com/s/files/1/0188/0503/0976/files/megamenu2_2000x.jpg?v=1574920936" alt="" />
-                                                                  </a>
-                                                               </div>
+                                                           
+                                                         </div>
+                                                         <div class="col-wide">
+                                                            <div class="bottom_left">          
+                                                               <a [routerLink]="['/allproducts']" title="">
+                                                               <img src="/assets/images/all1.jpg" alt="" />
+                                                               </a>
+                                                            </div>
+                                                            <div class="bottom_right">          
+                                                               <a [routerLink]="['/allproducts']" title="">
+                                                               <img src="/assets/images/all2.jpg" alt="" />
+                                                               </a>
                                                             </div>
                                                          </div>
                                                       </div>
                                                    </li>
  
                                                    <li class=" dropdown  mega-menu ">
-                                                      <a  [routerLink]="['/blogs']" class="">
+                                                      <a  [routerLink]="['/blogs']" class="site-nav">
                                                       <span>         
-                                                      Blogs     
+                                                      ĐÁNH GIÁ  
                                                       </span>       
                                                       </a> 	
                                                       <div class="site-nav-dropdown">
@@ -420,153 +221,50 @@
                                                                   <a  href="products/calories-meter" class=" ">
                                                                   Lời khuyên bác sĩ 
                                                                   </a>
-                                                                  <ul class="dropdown">
-                                                                     <!-- Menu level 3 -->
-                                                                     <li>
-                                                                        <a href="products/celsius-meter" >
-                                                                        Thói quen sinh hoạt 
-                                                                        </a>
-                                                                     </li>
-                                                                     <!-- Menu level 3 -->
-                                                                     <li>
-                                                                        <a href="products/cleaning-scissor" >
-                                                                        Quy trình trị mụn 
-                                                                        </a>
-                                                                     </li>
-                                                                     <!-- Menu level 3 -->
-                                                                     <li>
-                                                                        <a href="products/cleaning-scissor" >
-                                                                        Quy trình trị thâm sau mụn 
-                                                                        </a>
-                                                                     </li>
-                                                                     <!-- Menu level 3 -->
-                                                                     <li>
-                                                                        <a href="products/cleaning-scissor" >
-                                                                        Dưỡng da 
-                                                                        </a>
-                                                                     </li>
-                                                                     
-                                                                  </ul>
+                                                                  
                                                                </div>
                                                                <div class="inner col-xs-12 col-sm-4">
                                                                   <!-- Menu level 2 -->
                                                                   <a  href="products/celsius-meter" class=" ">
                                                                   Cảm nhận sản phẩm 
                                                                   </a>
-                                                                  <ul class="dropdown">
-                                                                     <!-- Menu level 3 -->
-                                                                     <li>
-                                                                        <a href="products/cleaning-scissor" >
-                                                                        Sản phẩm mới 
-                                                                        </a>
-                                                                     </li>
-                                                                     <!-- Menu level 3 -->
-                                                                     <li>
-                                                                        <a href="products/celsius-meter" >
-                                                                        Sản phẩm an toàn 
-                                                                        </a>
-                                                                     </li>
-                                                                     <!-- Menu level 3 -->
-                                                                     <li>
-                                                                        <a href="products/calories-meter" >
-                                                                        Sản phẩm tốt 
-                                                                        </a>
-                                                                     </li>
-                                                                     <!-- Menu level 3 -->
-                                                                     <li>
-                                                                        <a href="products/cleaning-scissor" >
-                                                                        Sản phẩm cần tránh 
-                                                                        </a>
-                                                                     </li>
-                                                                     
-                                                                  </ul>
+                                                                  
                                                                </div>
                                                                <div class="inner col-xs-12 col-sm-4">
                                                                   <!-- Menu level 2 -->
                                                                   <a  href="products/cleaning-scissor" class=" ">
                                                                   Đánh giá của người dùng 
                                                                   </a>
-                                                                  <ul class="dropdown">
-                                                                     <!-- Menu level 3 -->
-                                                                     <li>
-                                                                        <a href="products/calories-meter" >
-                                                                        Về các sản phẩm mới 
-                                                                        </a>
-                                                                     </li>
-                                                                     <!-- Menu level 3 -->
-                                                                     <li>
-                                                                        <a href="products/cleaning-scissor" >
-                                                                        Về thói quen sinh hoạt 
-                                                                        </a>
-                                                                     </li>
-                                                                     <!-- Menu level 3 -->
-                                                                     <li>
-                                                                        <a href="products/digital-thermometer" >
-                                                                        Về các nhãn hàng 
-                                                                        </a>
-                                                                     </li>
-                                                                     <!-- Menu level 3 -->
-                                                                     <li>
-                                                                        <a href="products/dental-floss-box" >
-                                                                        Về xu hướng chăm sóc da 
-                                                                        </a>
-                                                                     </li>
-                                                                    
-                                                                  </ul>
+                                                                  
                                                                </div>
                                                                <div class="inner col-xs-12 col-sm-4">
                                                                   <!-- Menu level 2 -->
                                                                   <a  href="products/celsius-meter" class=" ">
                                                                   Các shop & spa uy tín 
                                                                   </a>
-                                                                  <ul class="dropdown">
-                                                                     <!-- Menu level 3 -->
-                                                                     <li>
-                                                                        <a href="products/calories-meter" >
-                                                                        Điều trị mụn
-                                                                        </a>
-                                                                     </li>
-                                                                     <!-- Menu level 3 -->
-                                                                     <li>
-                                                                        <a href="products/cleaning-scissor" >
-                                                                        Điều trị thâm/sẹo sau mụn
-                                                                        </a>
-                                                                     </li>
-                                                                     <!-- Menu level 3 -->
-                                                                     <li>
-                                                                        <a href="products/dental-floss-box" >
-                                                                        Giảm nếp nhăn, chống lão hóa 
-                                                                        </a>
-                                                                     </li>
-                                                                     <!-- Menu level 3 -->
-                                                                     <li>
-                                                                        <a href="products/dental-floss-box" >
-                                                                        Dưỡng da/phục hồi 
-                                                                        </a>
-                                                                     </li>
-                                                                     
-                                                                  </ul>
+                                                                 
                                                                </div>
                                                             </div>
-                                                            <div class="col-wide">
-                                                               <div class="bottom_left">          
-                                                                  <a href="index.html" title="">
-                                                                  <img src="https://cdn.shopify.com/s/files/1/0188/0503/0976/files/menu-4-2_2000x.jpg?v=1551771108" alt="" />
-                                                                  </a>
-                                                               </div>
-                                                               <div class="bottom_right">          
-                                                                  <a href="index.html" title="">
-                                                                  <img src="https://cdn.shopify.com/s/files/1/0188/0503/0976/files/menu-4-1_2000x.jpg?v=1551771113" alt="" />
-                                                                  </a>
-                                                               </div>
+                                                            
+                                                         </div>
+                                                         <div class="col-wide">
+                                                            <div class="bottom_left">          
+                                                               <a [routerLink]="['/blogs']" title="">
+                                                               <img src="/assets/images/review.jpg" alt="" />
+                                                               </a>
+                                                            </div>
+                                                            <div class="bottom_right">          
+                                                               <a [routerLink]="['/blogs']" title="">
+                                                               <img src="/assets/images/shop.jpg" alt="" />
+                                                               </a>
                                                             </div>
                                                          </div>
                                                       </div>
                                                    </li>
                                                    <li class=" dropdown  mega-menu ">
-                                                      <a  href="collections/new-offers" class="">
+                                                      <a  href="collections/new-offers" class="site-nav">
                                                       <span>         
-                                                      Tìm kiếm    
+                                                      TÌM KIẾM 
                                                       </span>       
                                                       </a> 	
                                                       <div class="site-nav-dropdown">
@@ -574,21 +272,21 @@
                                                             <div class="col-1 parent-mega-menu">
                                                                <div class="inner col-xs-12 col-sm-4">
                                                                   <!-- Menu level 2 -->
-                                                                  <a  [routerLink]="['/searchproducts']" class=" ">
+                                                                  <a  [routerLink]="['/searchproducts']" class="site-menu2">
                                                                   Tìm sản phẩm 
                                                                   </a>
                                                                
                                                                </div>
                                                                <div class="inner col-xs-12 col-sm-4">
                                                                   <!-- Menu level 2 -->
-                                                                  <a  [routerLink]="['/searchingredients']" class=" ">
+                                                                  <a  [routerLink]="['/searchingredients']" class="site-menu2">
                                                                   Tra cứu thành phần 
                                                                   </a>
                                                                   
                                                                </div>
                                                                <div class="inner col-xs-12 col-sm-4">
                                                                   <!-- Menu level 2 -->
-                                                                  <a  [routerLink]="['/searchblogs']" class=" ">
+                                                                  <a  [routerLink]="['/searchblogs']" class="site-menu2">
                                                                      Tìm kiếm Blogs
                                                                   </a>
                                                                   
@@ -607,9 +305,9 @@
                                                       </div>
                                                    </li>
                                                    <li class="">
-                                                      <a class="menu__moblie"  [routerLink]="['/declare']" class="">
+                                                      <a class="menu__moblie"  [routerLink]="['/declare']" class="site-nav">
                                                       <span>         
-                                                      Khai báo da      
+                                                      KHAI BÁO DA     
                                                       </span>       
                                                       </a> 	
                                                       
@@ -628,880 +326,94 @@
                   <main class="main-content">
                      <div class="grid-uniform">
                      <div class="grid__item">
+                        <div class="slider" id="main-slider"><!-- outermost container element -->
+                           <div class="slider-wrapper"><!-- innermost wrapper element -->
+                              <img src="/assets/images/laroche.jpg" alt="First" class="slide" /><!-- slides -->
+                              <img src="/assets/images/obagi.jpg" alt="Second" class="slide" />
+                              <img src="/assets/images/paula.jpg" alt="Third" class="slide" />
+                           </div>
+                        </div>
                         <div class="container">
+                           
                            <!-- BEGIN content_for_index -->
                            <div id="shopify-section-1542369329707" class="shopify-section index-section index-section--flush">
-                              <div class="wrapper">
-                                 
-                              </div>
+                            
+                               
+                               
                               <div id="shopify-section-1585282755591" class="shopify-section index-section">
                                  <div data-section-id="1585282755591"  data-section-type="home-product-grid-type-5" class="home-product-grid-type-5">
                                     <div class="container">
                                        <div class="full_width_tab load-wrapper">
                                           <div class="section-header section-header--small wow fadeInDown animated ">
                                              <div class="border-title">
-                                                <h2 class="section-header__title" style="color:#000;">    
-                                                   New arrivals
+                                                <h2 class="section-header__title" style="color:rgb(128, 9, 88);" class="site-menu1">    
+                                                   Sản phẩm
                                                 </h2>
-                                                <div class="small-desc">
-                                                   <p style="color:#000;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus Nullam quis ante</p>
-                                                </div>
+                                               
                                              </div>
                                           </div>
                                           <div class="dt-sc-hr-invisible-small"></div>
                                           <div class="grid-uniform">
-                                             <div class="grid__item ">
-                                                <ul class="type4__items">
-                                                   <li class="grid__item item-row  wide--one-quarter post-large--one-quarter large--one-quarter medium--one-half small-grid__item  medium--one-half small--one-half  " id="product-2241007353920">
-                                                      <div class="products product-hover-9">
-                                                         <div class="product-container">
-                                                            <a href="https://kure-demo.myshopify.com/collections/best-seller/products/digital-pressure-machine" class="grid-link">
-                                                               <div class="ImageOverlayCa"></div>
-                                                               <img src="https://cdn.shopify.com/s/files/1/0188/0503/0976/products/pdt2_large.jpg?v=1547027949" class="featured-image" alt="Digital Pressure Machine">
-                                                            </a>
-                                                            <div class="product_right_tag  ">
-                                                            </div>
-                                                            <div class="ImageWrapper">
-                                                               <div class="product-button">
-                                                                  <a title="Quick View" href="javascript:void(0)" id="digital-pressure-machine" class="quick-view-text">                      
-                                                                  <i class="far fa-eye"></i> 
-                                                                  </a>       
-                                                                  <a title="Product Link" href="products/digital-pressure-machine">                      
-                                                                  <i class="fas fa-link"></i> 
-                                                                  </a>       
-                                                                  <div class="add-to-wishlist">
-                                                                     <div class="show">
-                                                                        <div class="default-wishbutton-digital-pressure-machine loading"><a title="Add to wishlist" class="add-in-wishlist-js" href="https://kure-demo.myshopify.com/digital-pressure-machine"><i class="far fa-heart"></i><span class="tooltip-label">Add to wishlist</span></a></div>
-                                                                        <div class="loadding-wishbutton-digital-pressure-machine loading" style="display: none; pointer-events: none"><a class="add_to_wishlist" href="https://kure-demo.myshopify.com/digital-pressure-machine"><i class="fas fa-spinner"></i></a></div>
-                                                                        <div class="added-wishbutton-digital-pressure-machine loading" style="display: none;"><a title="View Wishlist" class="added-wishlist add_to_wishlist" [routerLink]="['/wishlist']"><i class="fas fa-heart"></i><span class="tooltip-label">View Wishlist</span></a></div>
-                                                                     </div>
-                                                                  </div>
-                                                               </div>
-                                                            </div>
-                                                         </div>
-                                                         <div class="product-detail">
-                                                            <a href="https://kure-demo.myshopify.com/collections/best-seller/products/digital-pressure-machine" class="grid-link__title">Digital Pressure Machine</a> 
-                                                            <div class="grid-link__meta">
-                                                               <div class="product_price">
-                                                                  <div class="grid-link__org_price" id="ProductPrice">
-                                                                     <span> <span class=money>$329.00</span></span>
-                                                                  </div>
-                                                               </div>
-                                                            </div>
-                                                            <form  action="https://kure-demo.myshopify.com/cart/add" method="post" class="variants clearfix" id="cart-form-2241007353920">                                    
-                                                               <input type="hidden" name="id" value="21096125071424" />  
-                                                               <a title="Add to Cart" class="add-cart-btn btn">
-                                                               <i class="fas fa-shopping-cart"></i>Add to Cart
-                                                               </a>
-                                                            </form>
-                                                         </div>
-                                                      </div>
-                                                   </li>
-                                                   <li class="grid__item item-row  wide--one-quarter post-large--one-quarter large--one-quarter medium--one-half small-grid__item  medium--one-half small--one-half  " id="product-2241006207040">
-                                                      <div class="products product-hover-9">
-                                                         <div class="product-container">
-                                                            <a href="https://kure-demo.myshopify.com/collections/best-seller/products/celsius-meter" class="grid-link">
-                                                               <div class="ImageOverlayCa"></div>
-                                                               <div class="reveal"> 
-                                                                  <span class="product-additional">      
-                                                                  <img src="https://cdn.shopify.com/s/files/1/0188/0503/0976/products/pdt3_large.jpg?v=1547027946" class="featured-image" alt="Celsius Meter">
-                                                                  </span>
-                                                                  <img  src="https://cdn.shopify.com/s/files/1/0188/0503/0976/products/pdt6_40c6879b-722c-4455-bd09-2a69a8b6f2c4_large.jpg?v=1547027946" class="hidden-feature_img" alt="Celsius Meter" />
-                                                               </div>
-                                                            </a>
-                                                            <div class="product_right_tag  ">
-                                                            </div>
-                                                            <div class="ImageWrapper">
-                                                               <div class="product-button">
-                                                                  <a title="Quick View" href="javascript:void(0)" id="celsius-meter" class="quick-view-text">                      
-                                                                  <i class="far fa-eye"></i> 
-                                                                  </a>       
-                                                                  <a title="Product Link" href="products/celsius-meter">                      
-                                                                  <i class="fas fa-link"></i> 
-                                                                  </a>       
-                                                                  <div class="add-to-wishlist">
-                                                                     <div class="show">
-                                                                        <div class="default-wishbutton-celsius-meter loading"><a title="Add to wishlist" class="add-in-wishlist-js" href="https://kure-demo.myshopify.com/celsius-meter"><i class="far fa-heart"></i><span class="tooltip-label">Add to wishlist</span></a></div>
-                                                                        <div class="loadding-wishbutton-celsius-meter loading" style="display: none; pointer-events: none"><a class="add_to_wishlist" href="https://kure-demo.myshopify.com/celsius-meter"><i class="fas fa-spinner"></i></a></div>
-                                                                        <div class="added-wishbutton-celsius-meter loading" style="display: none;"><a title="View Wishlist" class="added-wishlist add_to_wishlist" [routerLink]="['/wishlist']"><i class="fas fa-heart"></i><span class="tooltip-label">View Wishlist</span></a></div>
-                                                                     </div>
-                                                                  </div>
-                                                               </div>
-                                                            </div>
-                                                         </div>
-                                                         <div class="product-detail">
-                                                            <a href="https://kure-demo.myshopify.com/collections/best-seller/products/celsius-meter" class="grid-link__title"> {{this.NameProduct}}</a> 
-                                                            <div class="grid-link__meta">
-                                                               <div class="product_price">
-                                                                  <div class="grid-link__org_price" id="ProductPrice">
-                                                                     <span> <span class=money><i class="fas fa-seedling"></i> {{this.PointPro}}</span></span>
-                                                                  </div>
-                                                               </div>
-                                                            </div>
-                                                            <form  action="https://kure-demo.myshopify.com/cart/add" method="post" class="variants clearfix" id="cart-form-2241006207040">                                    
-                                                               <input type="hidden" name="id" value="21096108785728" />  
-                                                               <a title="Add to Cart" class="add-cart-btn btn">
-                                                               <i class="fas fa-shopping-cart"></i>Add to Cart
-                                                               </a>
-                                                            </form>
-                                                         </div>
-                                                      </div>
-                                                   </li>
-                                                   <li class="grid__item item-row  wide--one-quarter post-large--one-quarter large--one-quarter medium--one-half small-grid__item  medium--one-half small--one-half  " id="product-2241003847744">
-                                                      <div class="products product-hover-9">
-                                                         <div class="product-container">
-                                                            <label class="deal-lable">Hurry, Only few item(s) left!</label>
-                                                            <div class="deal-clock lof-clock-2241003847744-detail"></div>
+                                             <div class="products-grid-view">
+                                       <ul>
+                                          <li class="grid__item item-row  wide--one-quarter post-large--one-third large--one-half medium--one-half small-grid__item  medium--one-half small--one-half  " id="product-2240996147264" *ngFor="let product of productlist">
+                                             <div class="products product-hover-9">
+                                                <div class="product-container">
+                                                   <a (click)="this.getNavigation(product.ID3code)" [routerLink]="['/productdetails/:', product.ID3code]" class="grid-link">
+                                                      <div class="ImageOverlayCa"></div>
+                                                      <img [src]="this.getImageSource(product.Image)" style="height: 200px;width: 200px;" class="featured-image" alt="Calories Meter">
+                                                   </a>
+                                                   <div class="product_right_tag  ">
+                                                   </div>
+                                                   
+                                                </div>
+                                                <div class="product-detail">
+                                                   <a href="https://kure-demo.myshopify.com/collections/all/products/calories-meter" class="grid-link__title" style="font-size: 20px;">{{product.NameProduct}}</a> 
+                                                   <div class="grid-link__meta">
+                                                      <div class="product_price">
+                                                         <div class="grid-link__org_price" id="ProductPrice">
                                                             
-                                                            <style></style>
-                                                            <a href="https://kure-demo.myshopify.com/collections/best-seller/products/digital-thermometer" class="grid-link">
-                                                               <div class="ImageOverlayCa"></div>
-                                                               <img src="https://cdn.shopify.com/s/files/1/0188/0503/0976/products/pdt5_large.jpg?v=1547027940" class="featured-image" alt="Digital Thermometer">
-                                                            </a>
-                                                            <div class="product_right_tag  ">
-                                                            </div>
-                                                            <div class="ImageWrapper">
-                                                               <div class="product-button">
-                                                                  <a title="Quick View" href="javascript:void(0)" id="digital-thermometer" class="quick-view-text">                      
-                                                                  <i class="far fa-eye"></i> 
-                                                                  </a>       
-                                                                  <a title="Product Link" href="products/digital-thermometer">                      
-                                                                  <i class="fas fa-link"></i> 
-                                                                  </a>       
-                                                                  <div class="add-to-wishlist">
-                                                                     <div class="show">
-                                                                        <div class="default-wishbutton-digital-thermometer loading"><a title="Add to wishlist" class="add-in-wishlist-js" href="https://kure-demo.myshopify.com/digital-thermometer"><i class="far fa-heart"></i><span class="tooltip-label">Add to wishlist</span></a></div>
-                                                                        <div class="loadding-wishbutton-digital-thermometer loading" style="display: none; pointer-events: none"><a class="add_to_wishlist" href="https://kure-demo.myshopify.com/digital-thermometer"><i class="fas fa-spinner"></i></a></div>
-                                                                        <div class="added-wishbutton-digital-thermometer loading" style="display: none;"><a title="View Wishlist" class="added-wishlist add_to_wishlist" [routerLink]="['/wishlist']"><i class="fas fa-heart"></i><span class="tooltip-label">View Wishlist</span></a></div>
-                                                                     </div>
-                                                                  </div>
-                                                               </div>
-                                                            </div>
+                                                            <span> <span class=money><i class="fas fa-seedling"></i> {{product.PointProduct}}</span></span>
+                                                
                                                          </div>
-                                                         <div class="product-detail">
-                                                            <a href="https://kure-demo.myshopify.com/collections/best-seller/products/digital-thermometer" class="grid-link__title">Digital Thermometer</a> 
-                                                            <div class="grid-link__meta">
-                                                               <div class="product_price">
-                                                                  <div class="grid-link__org_price" id="ProductPrice">
-                                                                     <span> <span class=money>$860.00</span></span>
-                                                                  </div>
-                                                               </div>
-                                                            </div>
-                                                            <form  action="https://kure-demo.myshopify.com/cart/add" method="post" class="variants clearfix" id="cart-form-2241003847744">                                    
-                                                               <input type="hidden" name="id" value="21096060125248" />  
-                                                               <a title="Add to Cart" class="add-cart-btn btn">
-                                                               <i class="fas fa-shopping-cart"></i>Add to Cart
-                                                               </a>
-                                                            </form>
-                                                         </div>
+                                                         
                                                       </div>
-                                                   </li>
-                                                   <li class="grid__item item-row  wide--one-quarter post-large--one-quarter large--one-quarter medium--one-half small-grid__item  medium--one-half small--one-half  " id="product-2240998277184">
-                                                      <div class="products product-hover-9">
-                                                         <div class="product-container">
-                                                            <a href="https://kure-demo.myshopify.com/collections/best-seller/products/cleaning-scissor" class="grid-link">
-                                                               <div class="ImageOverlayCa"></div>
-                                                               <img src="https://cdn.shopify.com/s/files/1/0188/0503/0976/products/pdt16_large.jpg?v=1547027929" class="featured-image" alt="Cleaning Scissor">
-                                                            </a>
-                                                            <div class="product_right_tag  ">
-                                                            </div>
-                                                            <div class="ImageWrapper">
-                                                               <div class="product-button">
-                                                                  <a title="Quick View" href="javascript:void(0)" id="cleaning-scissor" class="quick-view-text">                      
-                                                                  <i class="far fa-eye"></i> 
-                                                                  </a>       
-                                                                  <a title="Product Link" href="products/cleaning-scissor">                      
-                                                                  <i class="fas fa-link"></i> 
-                                                                  </a>       
-                                                                  <div class="add-to-wishlist">
-                                                                     <div class="show">
-                                                                        <div class="default-wishbutton-cleaning-scissor loading"><a title="Add to wishlist" class="add-in-wishlist-js" href="https://kure-demo.myshopify.com/cleaning-scissor"><i class="far fa-heart"></i><span class="tooltip-label">Add to wishlist</span></a></div>
-                                                                        <div class="loadding-wishbutton-cleaning-scissor loading" style="display: none; pointer-events: none"><a class="add_to_wishlist" href="https://kure-demo.myshopify.com/cleaning-scissor"><i class="fas fa-spinner"></i></a></div>
-                                                                        <div class="added-wishbutton-cleaning-scissor loading" style="display: none;"><a title="View Wishlist" class="added-wishlist add_to_wishlist" [routerLink]="['/wishlist']"><i class="fas fa-heart"></i><span class="tooltip-label">View Wishlist</span></a></div>
-                                                                     </div>
-                                                                  </div>
-                                                               </div>
-                                                            </div>
-                                                         </div>
-                                                         <div class="product-detail">
-                                                            <a href="https://kure-demo.myshopify.com/collections/best-seller/products/cleaning-scissor" class="grid-link__title">Cleaning Scissor</a> 
-                                                            <div class="grid-link__meta">
-                                                               <div class="product_price">
-                                                                  <div class="grid-link__org_price" id="ProductPrice">
-                                                                     <span> <span class=money>$398.00</span></span>
-                                                                  </div>
-                                                               </div>
-                                                            </div>
-                                                            <form  action="https://kure-demo.myshopify.com/cart/add" method="post" class="variants clearfix" id="cart-form-2240998277184">                                    
-                                                               <input type="hidden" name="id" value="21096019787840" />  
-                                                               <a title="Add to Cart" class="add-cart-btn btn">
-                                                               <i class="fas fa-shopping-cart"></i>Add to Cart
-                                                               </a>
-                                                            </form>
-                                                         </div>
-                                                      </div>
-                                                   </li>
-                                                </ul>
-                                             </div>
-                                          </div>
-                                          <div class="dt-sc-hr-invisible-small"></div>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                              <div id="shopify-section-1547016715103" class="shopify-section index-section">
-                                 <div data-section-id="1547016715103" data-section-type="grid-banner-type-32" class="grid-banner-type-32" style="float:left;width:100%;background:#ffffff;">
-                                    <div class="wrapper">
-                                       <div class="grid-uniform">
-                                          <div class="section-one  wow fadeInUp animated">
-                                             <div class="grid__item wide--one-half post-large--one-half large--grid__item medium--grid__item small-grid__item ">
-                                                <div class="block-content ">
-                                                   <h2 style=" color:#ffffff">Hot Pressure Aroma Ozone Vaporizer</h2>
-                                                   <p>With 24/7 live streaming, a versatile magnetic stand, person alerts with Nest Aware and one app for all your Nest products, Nest Cam helps you keep an eye on what matters. From anywhere.</p>
-                                                   <a [routerLink]="['/allproducts']" style="color:rgb(69, 206, 160);" class="btn">
-                                                      View all collection
-                                                      <div class="overlay"></div>
-                                                   </a>
+                                                      
+                                                   </div>
+                                                   <button class="snip1582">{{product.NameProductType}}</button>
+                                                   
+                                                   
                                                 </div>
+                                                 
                                              </div>
-                                             <div  class="grid__item wide--one-half post-large--one-half large--grid__item medium--grid__item small-grid__item">
-                                                <div class="ovrly10">
-                                                   <a [routerLink]="['/allproducts']">
-                                                      <img src="https://cdn.shopify.com/s/files/1/0188/0503/0976/files/img5_1920X.jpg?v=1574142868" alt="Hot Pressure Aroma Ozone Vaporizer" />
-                                                      <div class="overlay"></div>
-                                                   </a>
-                                                </div>
-                                             </div>
-                                          </div>
+                                          </li>
+                                          
                                          
-                                       </div>
+                                       </ul>
                                     </div>
-                                 </div>
-                              </div>
-                              <div id="shopify-section-1547016755773" class="shopify-section index-section">
-                                 <div data-section-id="1547016755773"  data-section-type="triangle-icon-block-a" class="triangle-icon-block-a" style=" background-image:url('https://cdn.shopify.com/s/files/1/0188/0503/0976/files/video-bg_18cc4631-3c3d-4e3c-9dd9-d50f48869231.png?v=1574243207');background-repeat:no-repeat;background-size:auto;background-position:bottom;background-color:#fafafa">
-                                    <div class="container">
-                                       <div class="border-title text-center wow fadeInDown animated">
-                                          <h2 class="" style="color:#222222">Medical Equipment & Kit</h2>
-                                          <p class="small-desc" style="color:#444444">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus Nullam quis ante</p>
-                                       </div>
-                                       <div class="grid-uniform">
-                                          <div class=" triangle-icon-wrapper">
-                                             <div class="grid__item wide--one-third post-large--one-third large--one-third medium--one-whole small-grid__item triangle-icon-left">
-                                                <div class="icon_wrapper icon-left wow fadeInUp animated">
-                                                   <div class="icon">
-                                                      <img src="https://cdn.shopify.com/s/files/1/0188/0503/0976/files/img1_c7654913-5675-45b9-9558-e4eb826ba7a7_grande.jpg?v=1574142669" alt="" title=""  style="color:rgb(69, 206, 160);"/> 
-                                                   </div>
-                                                   <div class="icon-content">
-                                                      <h4 style="color:#222222;">Stethoscope</h4>
-                                                      <p class="desc" style="color:#444444;">Lorem Ipsum is simply dummy text of the printing and type setting industry. Industry's standard dummy</p>
-                                                   </div>
-                                                </div>
-                                                <div class="icon_wrapper icon-left wow fadeInUp animated">
-                                                   <div class="icon">
-                                                      <img src="https://cdn.shopify.com/s/files/1/0188/0503/0976/files/img3_9bc13380-9564-4f0e-8213-0e3ec0b511bd_grande.jpg?v=1574142679" alt="" title=""  style="color:rgb(69, 206, 160);"/> 
-                                                   </div>
-                                                   <div class="icon-content">
-                                                      <h4 style="color:#222222;">Beaker</h4>
-                                                      <p class="desc" style="color:#444444;">Lorem Ipsum is simply dummy text of the printing and type setting industry. Industry's standard dummy</p>
-                                                   </div>
-                                                </div>
-                                             </div>
-                                             <div class="grid__item wide--one-third post-large--one-third large--one-third medium--one-whole small-grid__item">
-                                                <div class="center-block wow bounceIn animated" style="color:rgb(69, 206, 160);">
-                                                   <img src="https://cdn.shopify.com/s/files/1/0188/0503/0976/files/micro-scope_grande.png?v=1574142047" alt="" />
-                                                </div>
-                                             </div>
-                                             <div class="grid__item wide--one-third post-large--one-third large--one-third medium--one-whole small-grid__item triangle-icon-right">
-                                                <div class="icon_wrapper icon-right wow fadeInUp animated">
-                                                   <div class="icon">
-                                                      <img src="https://cdn.shopify.com/s/files/1/0188/0503/0976/files/img4_66b90825-0d61-4fda-832b-ef496279ec80_grande.jpg?v=1574142689" alt="" title=""  style="color:rgb(69, 206, 160);"/> 
-                                                   </div>
-                                                   <div class="icon-content">
-                                                      <h4 style="color:#222222;">Microscope</h4>
-                                                      <p class="desc" style="color:#444444;">Lorem Ipsum is simply dummy text of the printing and type setting industry. Industry's standard dummy</p>
-                                                   </div>
-                                                </div>
-                                                <div class="icon_wrapper icon-right wow fadeInUp animated">
-                                                   <div class="icon">
-                                                      <img src="https://cdn.shopify.com/s/files/1/0188/0503/0976/files/img2_cacf0d59-3415-4232-b4f7-ce52293a7cc9_grande.jpg?v=1574142705" alt="" title=""  style="color:rgb(69, 206, 160);"/> 
-                                                   </div>
-                                                   <div class="icon-content">
-                                                      <h4 style="color:#222222;">Injection</h4>
-                                                      <p class="desc" style="color:#444444;">Lorem Ipsum is simply dummy text of the printing and type setting industry. Industry's standard dummy</p>
-                                                   </div>
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                                 
-                              </div>
-                              <div id="shopify-section-1547016818515" class="shopify-section index-section">
-                                 <section data-section-id="1547016818515" data-section-type="video-content-block-1" class="video-content-block-1" style= " background-image:url('https://cdn.shopify.com/s/files/1/0188/0503/0976/files/med-bg.jpg?v=1574154699');background-repeat:no-repeat;background-size:cover;background-position:center;float:left;width:100%;position:relative; ">
-                                    <div class="grid-uniform"  >
-                                       <div class="video-banner-type-1-block block7" style="float:left;width:100%;">
-                                          <div class="video-banner-type-1-content wow fadeInUp animated">
-                                             <div class="block-content">
-                                                <div class="p-video">
-                                                   <img src="https://cdn.shopify.com/s/files/1/0188/0503/0976/files/video-img_1_700X.jpg?v=1574160032" alt="Destination for all your medical need" />
-                                                   <div class="overlay"></div>
-                                                   <a href="https://www.youtube.com/watch?v=mmHsATzA0fg" class="jas-popup-url" data-effect="mfp-move-from-top">
-                                                   <img src="https://cdn.shopify.com/s/files/1/0188/0503/0976/files/play-img_1_700X.png?v=1574310259" alt="Destination for all your medical need" />
-                                                   </a>     
-                                                </div>
-                                             </div>
-                                             <div class="container">
-                                                <h2 style="color:#ffffff">Destination for all your medical need</h2>
-                                                <div class="">
-                                                   <p style="color:#ffffff">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus Nullam quis ante</p>
-                                                </div>
-                                                <a class="btn" href="index.html">View Collection</a>    
-                                             </div>
-                                             <div id="debug" style="display: none">
-                                                <h2 style="color: #FFFFFF; text-align: left">Events console: </h2>
-                                                <div id="eventListener"></div>
-                                             </div>
-                                          </div>
-                                       </div>
-                                       
-                                    </div>
-                                    <link href="https://cdn.shopify.com/s/files/1/0188/0503/0976/t/2/assets/jquery.mb.YTPlayer.min.css?v=1606557005136261699" rel="stylesheet" type="text/css" media="all" />
-                                    <script src="https://cdn.shopify.com/s/files/1/0188/0503/0976/t/2/assets/jquery.mb.YTPlayer.js?v=4383344290154288008" type="text/javascript"></script> 
-                                    <div class="dt-sc-hr-invisible-large"></div>
-                                 </section>
-                                 
-                              </div>
-                              <div id="shopify-section-1547016854059" class="shopify-section index-section">
-                                 <div data-section-id="1547016854059"  data-section-type="home-product-grid-type-5" class="home-product-grid-type-5">
-                                    <div class="container">
-                                       <div class="full_width_tab load-wrapper">
-                                          <div class="section-header section-header--small wow fadeInDown animated ">
-                                             <div class="border-title">
-                                                <h2 class="section-header__title" style="color:#222222;">    
-                                                   Best Sellers
-                                                </h2>
-                                                <div class="small-desc">
-                                                   <p style="color:#444444;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus Nullam quis ante</p>
-                                                </div>
-                                             </div>
-                                          </div>
-                                          <div class="dt-sc-hr-invisible-small"></div>
-                                          <div class="grid-uniform">
-                                             <div class="grid__item ">
-                                                <ul class="type4__items">
-                                                   <li class="grid__item item-row  wide--one-quarter post-large--one-quarter large--one-quarter medium--one-half small-grid__item  medium--one-half small--one-half   on-sale" id="product-2240997294144">
-                                                      <div class="products product-hover-9">
-                                                         <div class="product-container">
-                                                            <a href="collections/frontpage/products/surgical-kit" class="grid-link">
-                                                               <div class="featured-tag">
-                                                                  <span class="badge badge--sale">          
-                                                                  <span class="gift-tag badge__text">Sale</span>
-                                                                  </span>
-                                                               </div>
-                                                               <div class="ImageOverlayCa"></div>
-                                                               <img src="https://cdn.shopify.com/s/files/1/0188/0503/0976/products/pdt19_large.jpg?v=1547027926" class="featured-image" alt="Surgical Kit">
-                                                            </a>
-                                                            <div class="product_right_tag   offer_exist ">
-                                                            </div>
-                                                            <div class="ImageWrapper">
-                                                               <div class="product-button">
-                                                                  <a title="Quick View" href="javascript:void(0)" id="surgical-kit" class="quick-view-text">                      
-                                                                  <i class="far fa-eye"></i> 
-                                                                  </a>       
-                                                                  <a title="Product Link" href="products/surgical-kit">                      
-                                                                  <i class="fas fa-link"></i> 
-                                                                  </a>       
-                                                                  <div class="add-to-wishlist">
-                                                                     <div class="show">
-                                                                        <div class="default-wishbutton-surgical-kit loading"><a title="Add to wishlist" class="add-in-wishlist-js" href="https://kure-demo.myshopify.com/surgical-kit"><i class="far fa-heart"></i><span class="tooltip-label">Add to wishlist</span></a></div>
-                                                                        <div class="loadding-wishbutton-surgical-kit loading" style="display: none; pointer-events: none"><a class="add_to_wishlist" href="https://kure-demo.myshopify.com/surgical-kit"><i class="fas fa-spinner"></i></a></div>
-                                                                        <div class="added-wishbutton-surgical-kit loading" style="display: none;"><a title="View Wishlist" class="added-wishlist add_to_wishlist" [routerLink]="['/wishlist']"><i class="fas fa-heart"></i><span class="tooltip-label">View Wishlist</span></a></div>
-                                                                     </div>
-                                                                  </div>
-                                                               </div>
-                                                            </div>
-                                                         </div>
-                                                         <div class="product-detail">
-                                                            <a href="collections/frontpage/products/surgical-kit" class="grid-link__title">Surgical Kit</a> 
-                                                            <div class="grid-link__meta">
-                                                               <div class="product_price">
-                                                                  <div class="grid-link__org_price" id="ProductPrice">
-                                                                     <span> <span class=money>$189.00</span></span>
-                                                                  </div>
-                                                               </div>
-                                                               <del class="grid-link__sale_price" id="ComparePrice">
-                                                               <span><span class=money>$200.00</span></span></del>
-                                                            </div>
-                                                            <form  action="https://kure-demo.myshopify.com/cart/add" method="post" class="variants clearfix" id="cart-form-2240997294144">                                    
-                                                               <input type="hidden" name="id" value="21096010907712" />  
-                                                               <a title="Add to Cart" class="add-cart-btn btn">
-                                                               <i class="fas fa-shopping-cart"></i>Add to Cart
-                                                               </a>
-                                                            </form>
-                                                         </div>
-                                                      </div>
-                                                   </li>
-                                                   <li class="grid__item item-row  wide--one-quarter post-large--one-quarter large--one-quarter medium--one-half small-grid__item  medium--one-half small--one-half   sold-out" id="product-2241004765248">
-                                                      <div class="products product-hover-9">
-                                                         <div class="product-container">
-                                                            <a href="collections/frontpage/products/stainless-scissors-blue" class="grid-link">
-                                                               <span class="badge badge--sold-out">
-                                                               <span class="badge__text">Sold Out</span>
-                                                               </span>
-                                                               <div class="ImageOverlayCa"></div>
-                                                               <img src="https://cdn.shopify.com/s/files/1/0188/0503/0976/products/pdt4_large.jpg?v=1547027941" class="featured-image" alt="Stainless Scissors Blue">
-                                                            </a>
-                                                            <div class="product_right_tag  ">
-                                                            </div>
-                                                            <div class="ImageWrapper">
-                                                               <div class="product-button"> 
-                                                                  <a title="Quick View" href="javascript:void(0)" id="stainless-scissors-blue" class="quick-view-text">                      
-                                                                  <i class="far fa-eye"></i> 
-                                                                  </a>       
-                                                                  <a title="Product Link" href="products/stainless-scissors-blue">                      
-                                                                  <i class="fas fa-link"></i> 
-                                                                  </a>       
-                                                               </div>
-                                                            </div>
-                                                         </div>
-                                                         <div class="product-detail">
-                                                            <a href="collections/frontpage/products/stainless-scissors-blue" class="grid-link__title">Stainless Scissors Blue</a> 
-                                                            <div class="grid-link__meta">
-                                                               <div class="product_price">
-                                                                  <div class="grid-link__org_price" id="ProductPrice">
-                                                                     <span> <span class=money>$539.00</span></span>
-                                                                  </div>
-                                                               </div>
-                                                            </div>
-                                                            <div class="add-to-wishlist">
-                                                               <div class="show">
-                                                                  <div class="default-wishbutton-stainless-scissors-blue loading"><a title="Add to wishlist" class="add-in-wishlist-js btn" href="https://kure-demo.myshopify.com/stainless-scissors-blue"><i class="far fa-heart"></i><span class="tooltip-label">Add to wishlist</span></a></div>
-                                                                  <div class="loadding-wishbutton-stainless-scissors-blue loading btn" style="display: none; pointer-events: none"><a class="add_to_wishlist" href="https://kure-demo.myshopify.com/stainless-scissors-blue"><i class="fas fa-spinner"></i></a></div>
-                                                                  <div class="added-wishbutton-stainless-scissors-blue loading" style="display: none;"><a title="View Wishlist" class="added-wishlist btn add_to_wishlist" [routerLink]="['/wishlist']"><i class="fas fa-heart"></i><span class="tooltip-label">View Wishlist</span></a></div>
-                                                               </div>
-                                                            </div>
-                                                         </div>
-                                                      </div>
-                                                   </li>
-                                                   <li class="grid__item item-row  wide--one-quarter post-large--one-quarter large--one-quarter medium--one-half small-grid__item  medium--one-half small--one-half   on-sale" id="product-2241002471488">
-                                                      <div class="products product-hover-9">
-                                                         <div class="product-container">
-                                                            <a href="collections/frontpage/products/stainless-kidney-tray" class="grid-link">
-                                                               <div class="featured-tag">
-                                                                  <span class="badge badge--sale">          
-                                                                  <span class="gift-tag badge__text">Sale</span>
-                                                                  </span>
-                                                               </div>
-                                                               <div class="ImageOverlayCa"></div>
-                                                               <img src="https://cdn.shopify.com/s/files/1/0188/0503/0976/products/pdt7_large.jpg?v=1547027938" class="featured-image" alt="Stainless Kidney Tray">
-                                                            </a>
-                                                            <div class="product_right_tag   offer_exist ">
-                                                            </div>
-                                                            <div class="ImageWrapper">
-                                                               <div class="product-button">
-                                                                  <a title="Quick View" href="javascript:void(0)" id="stainless-kidney-tray" class="quick-view-text">                      
-                                                                  <i class="far fa-eye"></i> 
-                                                                  </a>       
-                                                                  <a title="Product Link" href="products/stainless-kidney-tray">                      
-                                                                  <i class="fas fa-link"></i> 
-                                                                  </a>       
-                                                                  <div class="add-to-wishlist">
-                                                                     <div class="show">
-                                                                        <div class="default-wishbutton-stainless-kidney-tray loading"><a title="Add to wishlist" class="add-in-wishlist-js" href="https://kure-demo.myshopify.com/stainless-kidney-tray"><i class="far fa-heart"></i><span class="tooltip-label">Add to wishlist</span></a></div>
-                                                                        <div class="loadding-wishbutton-stainless-kidney-tray loading" style="display: none; pointer-events: none"><a class="add_to_wishlist" href="https://kure-demo.myshopify.com/stainless-kidney-tray"><i class="fas fa-spinner"></i></a></div>
-                                                                        <div class="added-wishbutton-stainless-kidney-tray loading" style="display: none;"><a title="View Wishlist" class="added-wishlist add_to_wishlist" [routerLink]="['/wishlist']"><i class="fas fa-heart"></i><span class="tooltip-label">View Wishlist</span></a></div>
-                                                                     </div>
-                                                                  </div>
-                                                               </div>
-                                                            </div>
-                                                         </div>
-                                                         <div class="product-detail">
-                                                            <a href="collections/frontpage/products/stainless-kidney-tray" class="grid-link__title">Stainless Kidney Tray</a> 
-                                                            <div class="grid-link__meta">
-                                                               <div class="product_price">
-                                                                  <div class="grid-link__org_price" id="ProductPrice">
-                                                                     <span> <span class=money>$489.00</span></span>
-                                                                  </div>
-                                                               </div>
-                                                               <del class="grid-link__sale_price" id="ComparePrice">
-                                                               <span><span class=money>$600.00</span></span></del>
-                                                            </div>
-                                                            <form  action="https://kure-demo.myshopify.com/cart/add" method="post" class="variants clearfix" id="cart-form-2241002471488">                                    
-                                                               <input type="hidden" name="id" value="21096053243968" />  
-                                                               <a title="Add to Cart" class="add-cart-btn btn">
-                                                               <i class="fas fa-shopping-cart"></i>Add to Cart
-                                                               </a>
-                                                            </form>
-                                                         </div>
-                                                      </div>
-                                                   </li>
-                                                   <li class="grid__item item-row  wide--one-quarter post-large--one-quarter large--one-quarter medium--one-half small-grid__item  medium--one-half small--one-half  " id="product-2240997785664">
-                                                      <div class="products product-hover-9">
-                                                         <div class="product-container">
-                                                            <a href="collections/frontpage/products/smart-mask" class="grid-link">
-                                                               <div class="ImageOverlayCa"></div>
-                                                               <img src="https://cdn.shopify.com/s/files/1/0188/0503/0976/products/pdt17_large.jpg?v=1547027928" class="featured-image" alt="Smart Mask">
-                                                            </a>
-                                                            <div class="product_right_tag  ">
-                                                            </div>
-                                                            <div class="ImageWrapper">
-                                                               <div class="product-button">
-                                                                  <a title="Quick View" href="javascript:void(0)" id="smart-mask" class="quick-view-text">                      
-                                                                  <i class="far fa-eye"></i> 
-                                                                  </a>       
-                                                                  <a title="Product Link" href="products/smart-mask">                      
-                                                                  <i class="fas fa-link"></i> 
-                                                                  </a>       
-                                                                  <div class="add-to-wishlist">
-                                                                     <div class="show">
-                                                                        <div class="default-wishbutton-smart-mask loading"><a title="Add to wishlist" class="add-in-wishlist-js" href="https://kure-demo.myshopify.com/smart-mask"><i class="far fa-heart"></i><span class="tooltip-label">Add to wishlist</span></a></div>
-                                                                        <div class="loadding-wishbutton-smart-mask loading" style="display: none; pointer-events: none"><a class="add_to_wishlist" href="https://kure-demo.myshopify.com/smart-mask"><i class="fas fa-spinner"></i></a></div>
-                                                                        <div class="added-wishbutton-smart-mask loading" style="display: none;"><a title="View Wishlist" class="added-wishlist add_to_wishlist" [routerLink]="['/wishlist']"><i class="fas fa-heart"></i><span class="tooltip-label">View Wishlist</span></a></div>
-                                                                     </div>
-                                                                  </div>
-                                                               </div>
-                                                            </div>
-                                                         </div>
-                                                         <div class="product-detail">
-                                                            <a href="collections/frontpage/products/smart-mask" class="grid-link__title">Smart Mask</a> 
-                                                            <div class="grid-link__meta">
-                                                               <div class="product_price">
-                                                                  <div class="grid-link__org_price" id="ProductPrice">
-                                                                     <span> <span class=money>$398.00</span></span>
-                                                                  </div>
-                                                               </div>
-                                                            </div>
-                                                            <form  action="https://kure-demo.myshopify.com/cart/add" method="post" class="variants clearfix" id="cart-form-2240997785664">                                    
-                                                               <input type="hidden" name="id" value="21096018018368" />  
-                                                               <a title="Add to Cart" class="add-cart-btn btn">
-                                                               <i class="fas fa-shopping-cart"></i>Add to Cart
-                                                               </a>
-                                                            </form>
-                                                         </div>
-                                                      </div>
-                                                   </li>
-                                                   <li class="grid__item item-row  wide--one-quarter post-large--one-quarter large--one-quarter medium--one-half small-grid__item  medium--one-half small--one-half  " id="product-2240997556288">
-                                                      <div class="products product-hover-9">
-                                                         <div class="product-container">
-                                                            <a href="collections/frontpage/products/sleeping-eye-mask" class="grid-link">
-                                                               <div class="ImageOverlayCa"></div>
-                                                               <img src="https://cdn.shopify.com/s/files/1/0188/0503/0976/products/pdt18_large.jpg?v=1547027927" class="featured-image" alt="Sleeping Eye Mask">
-                                                            </a>
-                                                            <div class="product_right_tag  ">
-                                                            </div>
-                                                            <div class="ImageWrapper">
-                                                               <div class="product-button">
-                                                                  <a title="Quick View" href="javascript:void(0)" id="sleeping-eye-mask" class="quick-view-text">                      
-                                                                  <i class="far fa-eye"></i> 
-                                                                  </a>       
-                                                                  <a title="Product Link" href="products/sleeping-eye-mask">                      
-                                                                  <i class="fas fa-link"></i> 
-                                                                  </a>       
-                                                                  <div class="add-to-wishlist">
-                                                                     <div class="show">
-                                                                        <div class="default-wishbutton-sleeping-eye-mask loading"><a title="Add to wishlist" class="add-in-wishlist-js" href="https://kure-demo.myshopify.com/sleeping-eye-mask"><i class="far fa-heart"></i><span class="tooltip-label">Add to wishlist</span></a></div>
-                                                                        <div class="loadding-wishbutton-sleeping-eye-mask loading" style="display: none; pointer-events: none"><a class="add_to_wishlist" href="https://kure-demo.myshopify.com/sleeping-eye-mask"><i class="fas fa-spinner"></i></a></div>
-                                                                        <div class="added-wishbutton-sleeping-eye-mask loading" style="display: none;"><a title="View Wishlist" class="added-wishlist add_to_wishlist" [routerLink]="['/wishlist']"><i class="fas fa-heart"></i><span class="tooltip-label">View Wishlist</span></a></div>
-                                                                     </div>
-                                                                  </div>
-                                                               </div>
-                                                            </div>
-                                                         </div>
-                                                         <div class="product-detail">
-                                                            <a href="collections/frontpage/products/sleeping-eye-mask" class="grid-link__title">Sleeping Eye Mask</a> 
-                                                            <div class="grid-link__meta">
-                                                               <div class="product_price">
-                                                                  <div class="grid-link__org_price" id="ProductPrice">
-                                                                     <span> <span class=money>$189.00</span></span>
-                                                                  </div>
-                                                               </div>
-                                                            </div>
-                                                            <form  action="https://kure-demo.myshopify.com/cart/add" method="post" class="variants clearfix" id="cart-form-2240997556288">                                    
-                                                               <input type="hidden" name="id" value="21096014807104" />  
-                                                               <a title="Add to Cart" class="add-cart-btn btn">
-                                                               <i class="fas fa-shopping-cart"></i>Add to Cart
-                                                               </a>
-                                                            </form>
-                                                         </div>
-                                                      </div>
-                                                   </li>
-                                                   <li class="grid__item item-row  wide--one-quarter post-large--one-quarter large--one-quarter medium--one-half small-grid__item  medium--one-half small--one-half  " id="product-2241002176576">
-                                                      <div class="products product-hover-9">
-                                                         <div class="product-container">
-                                                            <a href="collections/frontpage/products/safety-goggles" class="grid-link">
-                                                               <div class="ImageOverlayCa"></div>
-                                                               <img src="https://cdn.shopify.com/s/files/1/0188/0503/0976/products/pdt8_large.jpg?v=1547027937" class="featured-image" alt="Safety Goggles">
-                                                            </a>
-                                                            <div class="product_right_tag  ">
-                                                            </div>
-                                                            <div class="ImageWrapper">
-                                                               <div class="product-button">
-                                                                  <a title="Quick View" href="javascript:void(0)" id="safety-goggles" class="quick-view-text">                      
-                                                                  <i class="far fa-eye"></i> 
-                                                                  </a>       
-                                                                  <a title="Product Link" href="products/safety-goggles">                      
-                                                                  <i class="fas fa-link"></i> 
-                                                                  </a>       
-                                                                  <div class="add-to-wishlist">
-                                                                     <div class="show">
-                                                                        <div class="default-wishbutton-safety-goggles loading"><a title="Add to wishlist" class="add-in-wishlist-js" href="https://kure-demo.myshopify.com/safety-goggles"><i class="far fa-heart"></i><span class="tooltip-label">Add to wishlist</span></a></div>
-                                                                        <div class="loadding-wishbutton-safety-goggles loading" style="display: none; pointer-events: none"><a class="add_to_wishlist" href="https://kure-demo.myshopify.com/safety-goggles"><i class="fas fa-spinner"></i></a></div>
-                                                                        <div class="added-wishbutton-safety-goggles loading" style="display: none;"><a title="View Wishlist" class="added-wishlist add_to_wishlist" [routerLink]="['/wishlist']"><i class="fas fa-heart"></i><span class="tooltip-label">View Wishlist</span></a></div>
-                                                                     </div>
-                                                                  </div>
-                                                               </div>
-                                                            </div>
-                                                         </div>
-                                                         <div class="product-detail">
-                                                            <a href="collections/frontpage/products/safety-goggles" class="grid-link__title">Safety Goggles</a> 
-                                                            <div class="grid-link__meta">
-                                                               <div class="product_price">
-                                                                  <div class="grid-link__org_price" id="ProductPrice">
-                                                                     <span> <span class=money>$289.00</span></span>
-                                                                  </div>
-                                                               </div>
-                                                            </div>
-                                                            <form  action="https://kure-demo.myshopify.com/cart/add" method="post" class="variants clearfix" id="cart-form-2241002176576">                                    
-                                                               <input type="hidden" name="id" value="21096052424768" />  
-                                                               <a title="Add to Cart" class="add-cart-btn btn">
-                                                               <i class="fas fa-shopping-cart"></i>Add to Cart
-                                                               </a>
-                                                            </form>
-                                                         </div>
-                                                      </div>
-                                                   </li>
-                                                   <li class="grid__item item-row  wide--one-quarter post-large--one-quarter large--one-quarter medium--one-half small-grid__item  medium--one-half small--one-half   on-sale" id="product-2240998473792">
-                                                      <div class="products product-hover-9">
-                                                         <div class="product-container">
-                                                            <a href="collections/frontpage/products/safe-disposable-gloves" class="grid-link">
-                                                               <div class="featured-tag">
-                                                                  <span class="badge badge--sale">          
-                                                                  <span class="gift-tag badge__text">Sale</span>
-                                                                  </span>
-                                                               </div>
-                                                               <div class="ImageOverlayCa"></div>
-                                                               <img src="https://cdn.shopify.com/s/files/1/0188/0503/0976/products/pdt15_large.jpg?v=1547027930" class="featured-image" alt="Safe Disposable Gloves">
-                                                            </a>
-                                                            <div class="product_right_tag   offer_exist ">
-                                                            </div>
-                                                            <div class="ImageWrapper">
-                                                               <div class="product-button">
-                                                                  <a title="Quick View" href="javascript:void(0)" id="safe-disposable-gloves" class="quick-view-text">                      
-                                                                  <i class="far fa-eye"></i> 
-                                                                  </a>       
-                                                                  <a title="Product Link" href="products/safe-disposable-gloves">                      
-                                                                  <i class="fas fa-link"></i> 
-                                                                  </a>       
-                                                                  <div class="add-to-wishlist">
-                                                                     <div class="show">
-                                                                        <div class="default-wishbutton-safe-disposable-gloves loading"><a title="Add to wishlist" class="add-in-wishlist-js" href="https://kure-demo.myshopify.com/safe-disposable-gloves"><i class="far fa-heart"></i><span class="tooltip-label">Add to wishlist</span></a></div>
-                                                                        <div class="loadding-wishbutton-safe-disposable-gloves loading" style="display: none; pointer-events: none"><a class="add_to_wishlist" href="https://kure-demo.myshopify.com/safe-disposable-gloves"><i class="fas fa-spinner"></i></a></div>
-                                                                        <div class="added-wishbutton-safe-disposable-gloves loading" style="display: none;"><a title="View Wishlist" class="added-wishlist add_to_wishlist" [routerLink]="['/wishlist']"><i class="fas fa-heart"></i><span class="tooltip-label">View Wishlist</span></a></div>
-                                                                     </div>
-                                                                  </div>
-                                                               </div>
-                                                            </div>
-                                                         </div>
-                                                         <div class="product-detail">
-                                                            <a href="collections/frontpage/products/safe-disposable-gloves" class="grid-link__title">Safe Disposable Gloves</a> 
-                                                            <div class="grid-link__meta">
-                                                               <div class="product_price">
-                                                                  <div class="grid-link__org_price" id="ProductPrice">
-                                                                     <span> <span class=money>$639.00</span></span>
-                                                                  </div>
-                                                               </div>
-                                                               <del class="grid-link__sale_price" id="ComparePrice">
-                                                               <span><span class=money>$800.00</span></span></del>
-                                                            </div>
-                                                            <form  action="https://kure-demo.myshopify.com/cart/add" method="post" class="variants clearfix" id="cart-form-2240998473792">                                    
-                                                               <input type="hidden" name="id" value="21096021884992" />  
-                                                               <a title="Add to Cart" class="add-cart-btn btn">
-                                                               <i class="fas fa-shopping-cart"></i>Add to Cart
-                                                               </a>
-                                                            </form>
-                                                         </div>
-                                                      </div>
-                                                   </li>
-                                                   <li class="grid__item item-row  wide--one-quarter post-large--one-quarter large--one-quarter medium--one-half small-grid__item  medium--one-half small--one-half  " id="product-2241007714368">
-                                                      <div class="products product-hover-9">
-                                                         <div class="product-container">
-                                                            <a href="collections/frontpage/products/plaster-machine" class="grid-link">
-                                                               <div class="ImageOverlayCa"></div>
-                                                               <img src="https://cdn.shopify.com/s/files/1/0188/0503/0976/products/pdt1_large.jpg?v=1547027951" class="featured-image" alt="Plaster machine">
-                                                            </a>
-                                                            <div class="product_right_tag  ">
-                                                            </div>
-                                                            <div class="ImageWrapper">
-                                                               <div class="product-button">
-                                                                  <a title="Quick View" href="javascript:void(0)" id="plaster-machine" class="quick-view-text">                      
-                                                                  <i class="far fa-eye"></i> 
-                                                                  </a>       
-                                                                  <a title="Product Link" href="products/plaster-machine">                      
-                                                                  <i class="fas fa-link"></i> 
-                                                                  </a>       
-                                                                  <div class="add-to-wishlist">
-                                                                     <div class="show">
-                                                                        <div class="default-wishbutton-plaster-machine loading"><a title="Add to wishlist" class="add-in-wishlist-js" href="https://kure-demo.myshopify.com/plaster-machine"><i class="far fa-heart"></i><span class="tooltip-label">Add to wishlist</span></a></div>
-                                                                        <div class="loadding-wishbutton-plaster-machine loading" style="display: none; pointer-events: none"><a class="add_to_wishlist" href="https://kure-demo.myshopify.com/plaster-machine"><i class="fas fa-spinner"></i></a></div>
-                                                                        <div class="added-wishbutton-plaster-machine loading" style="display: none;"><a title="View Wishlist" class="added-wishlist add_to_wishlist" [routerLink]="['/wishlist']"><i class="fas fa-heart"></i><span class="tooltip-label">View Wishlist</span></a></div>
-                                                                     </div>
-                                                                  </div>
-                                                               </div>
-                                                            </div>
-                                                         </div>
-                                                         <div class="product-detail">
-                                                            <a href="collections/frontpage/products/plaster-machine" class="grid-link__title">Plaster machine</a> 
-                                                            <div class="grid-link__meta">
-                                                               <div class="product_price">
-                                                                  <div class="grid-link__org_price" id="ProductPrice">
-                                                                     <span> <span class=money>$189.00</span></span>
-                                                                  </div>
-                                                               </div>
-                                                            </div>
-                                                            <form  action="https://kure-demo.myshopify.com/cart/add" method="post" class="variants clearfix" id="cart-form-2241007714368">                                    
-                                                               <input type="hidden" name="id" value="21096129167424" />  
-                                                               <a title="Add to Cart" class="add-cart-btn btn">
-                                                               <i class="fas fa-shopping-cart"></i>Add to Cart
-                                                               </a>
-                                                            </form>
-                                                         </div>
-                                                      </div>
-                                                   </li>
-                                                </ul>
-                                             </div>
                                           </div>
                                           <div class="dt-sc-hr-invisible-small"></div>
                                        </div>
                                     </div>
                                  </div>
                               </div>
-                              <div id="shopify-section-1547016912584" class="shopify-section">
-                                 <div data-section-id="1547016912584"  data-section-type="testimonial-type-11" class="testimonial-type-11" style="background-color:#ffffff;">
-                                    <div class="grid-uniform">
-                                       <div class="border-title wow fadeInDown animated">
-                                          <h2 style="color:#222222">Testimonial</h2>
-                                       </div>
-                                       <div id="test-car-11" class="test-car-11 1547016912584-loop">
-                                          <div class="grid__item">
-                                             <div class="testimonial-block wow fadeInUp animated" >
-                                                <blockquote>
-                                                   <q style="color:#444444">Pellentesque posuere orci lobortis scelerisque blandit. Donec id tellus lacinia an, tincidunt risus ac, consequat velit. Quisquemos sodales suscipit tortor ditaemcos condimentum</q>
-                                                </blockquote>
-                                                <div class="test-detail">
-                                                   <div class="text-img">
-                                                      <img src="https://cdn.shopify.com/s/files/1/0188/0503/0976/files/team-1_e0d79656-677a-4040-a46c-f25508e80959_100X.jpg?v=1551771617" alt="" />             
-                                                   </div>
-                                                   <div class="test-inner-detail">
-                                                      <h4 style="color:#075ac9">Mack Shadley</h4>
-                                                      <span style="color:#35c7df">Supporter</span>
-                                                   </div>
-                                                   <div class="overlay"></div>
-                                                </div>
-                                             </div>
-                                          </div>
-                                          <div class="grid__item">
-                                             <div class="testimonial-block wow fadeInUp animated" >
-                                                <blockquote>
-                                                   <q style="color:#444444">Pellentesque posuere orci lobortis scelerisque blandit. Donec id tellus lacinia an, tincidunt risus ac, consequat velit. Quisquemos sodales suscipit tortor ditaemcos condimentum</q>
-                                                </blockquote>
-                                                <div class="test-detail">
-                                                   <div class="text-img">
-                                                      <img src="https://cdn.shopify.com/s/files/1/0188/0503/0976/files/team-2_66d74b21-2f5b-406d-9ed4-a5caae507eaa_100X.jpg?v=1551771628" alt="" />             
-                                                   </div>
-                                                   <div class="test-inner-detail">
-                                                      <h4 style="color:#075ac9">Roxane Bert</h4>
-                                                      <span style="color:#35c7df">Quality Tester</span>
-                                                   </div>
-                                                   <div class="overlay"></div>
-                                                </div>
-                                             </div>
-                                          </div>
-                                          <div class="grid__item">
-                                             <div class="testimonial-block wow fadeInUp animated" >
-                                                <blockquote>
-                                                   <q style="color:#444444">Pellentesque posuere orci lobortis scelerisque blandit. Donec id tellus lacinia an, tincidunt risus ac, consequat velit. Quisquemos sodales suscipit tortor ditaemcos condimentum</q>
-                                                </blockquote>
-                                                <div class="test-detail">
-                                                   <div class="text-img">
-                                                      <img src="https://cdn.shopify.com/s/files/1/0188/0503/0976/files/team-4_bfa79215-d7d1-4767-be0f-7271920fa8d8_100X.jpg?v=1551771638" alt="" />             
-                                                   </div>
-                                                   <div class="test-inner-detail">
-                                                      <h4 style="color:#075ac9">Eli Bickett</h4>
-                                                      <span style="color:#35c7df">Designation</span>
-                                                   </div>
-                                                   <div class="overlay"></div>
-                                                </div>
-                                             </div>
-                                          </div>
-                                          <div class="grid__item">
-                                             <div class="testimonial-block wow fadeInUp animated" >
-                                                <blockquote>
-                                                   <q style="color:#000">Pellentesque posuere orci lobortis scelerisque blandit. Donec id tellus lacinia an, tincidunt risus ac, consequat velit. Quisquemos sodales suscipit tortor ditaemcos condimentum</q>
-                                                </blockquote>
-                                                <div class="test-detail">
-                                                   <div class="text-img">
-                                                      <img src="https://cdn.shopify.com/s/files/1/0188/0503/0976/files/team-3_e130e0b5-0cd3-494f-b775-c41443debf16_100X.jpg?v=1551771645" alt="" />             
-                                                   </div>
-                                                   <div class="test-inner-detail">
-                                                      <h4 style="color:#000">Dulcie Dewolf</h4>
-                                                      <span style="color:#000">Developer</span>
-                                                   </div>
-                                                   <div class="overlay"></div>
-                                                </div>
-                                             </div>
-                                          </div>
-                                          <div class="grid__item">
-                                             <div class="testimonial-block wow fadeInUp animated" >
-                                                <blockquote>
-                                                   <q style="color:#000">Pellentesque posuere orci lobortis scelerisque blandit. Donec id tellus lacinia an, tincidunt risus ac, consequat velit. Quisquemos sodales suscipit tortor ditaemcos condimentum</q>
-                                                </blockquote>
-                                                <div class="test-detail">
-                                                   <div class="text-img">
-                                                      <img src="https://cdn.shopify.com/s/files/1/0188/0503/0976/files/team-5_2229679a-a7a6-4036-a27c-4b309430ce5d_100X.jpg?v=1551771654" alt="" />             
-                                                   </div>
-                                                   <div class="test-inner-detail">
-                                                      <h4 style="color:#000">Claudio Tsui</h4>
-                                                      <span style="color:#000">Tester</span>
-                                                   </div>
-                                                   <div class="overlay"></div>
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                                 
-                              </div>
-                              <div id="shopify-section-1547016927414" class="shopify-section index-section">
-                                 <div data-section-id="1547016927414" data-section-type="wide-banner-type-4" class="wide-banner-type-4">
-                                    <div class="grid-uniform">
-                                       <div class="wide-banner-type-4-block parallax" style="  background-image:url('https://cdn.shopify.com/s/files/1/0188/0503/0976/files/parallax-bg_1920X.jpg?v=1574156033');background-repeat:no-repeat;background-size:cover ">
-                                          <div class="wide-banner-type-4-content wow fadeInUp animated">
-                                             <h2 style="color:#ffffff;">Hurry Up! Daily Deal Of The Day</h2>
-                                             <p style="color:#ffffff">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus Nullam quis ante</p>
-                                             <a  href="index.html" style="color:#000000;background: #ffffff;" class="btn">View More</a>    
-                                          </div>
-                                       </div>
-                                       <div class="dt-sc-hr-invisible-large"></div>
-                                    </div>
-                                 </div>
-                                 
-                              </div>
+                              
+                         
+                             
+                              <div class="border-title wow fadeInUp animated">
+                                 <h2 class="section-header__title" style="color:#222222;" class="site-menu1">
+                                    <strong> Đánh giá, cảm nhận </strong>
+                                 </h2>
+                                </div>
+                                       <div class="blog-post">
+                           
                               <div id="shopify-section-1547017004810" class="shopify-section">
                                  <div data-section-id="1547017004810"  data-section-type="blog-post-type-4" class="blog-post-type-4">
                                     <div class="container">
+                                       
                                        <div class="blog-post">
                                           <div class="grid">
-                                             <div class="section-header section-header--small">
-                                                <div class="border-title wow fadeInDown animated">
-                                                   <h2 style="color:#222222;">From Our Blog</h2>
-                                                   <div class="small-desc">
-                                                      <p style="color:#444444;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus Nullam quis ante</p>
-                                                   </div>
-                                                </div>
-                                             </div>
+                                             
                                              <div class="home-blog blog-section" id="BlogType4">
                                                 <div class="article-item grid__item wide--one-third post-large--one-third large--one-third medium--one-third small-grid__item wow fadeInUp animated ">
                                                    <div class="article ">
@@ -1565,7 +477,7 @@
                                                 </div>
                                              </div>
                                              <div class="blog-btn">
-                                                <a class="btn"  href="blogs/news">View All Post<span class="lnr lnr-arrow-right"></span></a>
+                                                <a class="btn site-menu2"  [routerLink]="['/blogs']">Xem tất cả bài viết<span class="lnr lnr-arrow-right"></span></a>
                                              </div>
                                              <!--  <div class="nav_article"> </div> -->
                                           </div>
@@ -1575,30 +487,8 @@
                                     <div class="dt-sc-hr-invisible-large"></div>
                                  </div>
                               </div>
-                              <div id="shopify-section-1543388199595" class="shopify-section index-section">
-                                 <div data-section-id="1543388199595"  data-section-type="newsletter-block news-block-3" class="newsletter-block news-block-3 parallax" style="background-color:#fafafa;">
-                                    <div class="newsletter-block-type-3 ">
-                                       <div class="overlay"></div>
-                                       <div class="container">
-                                          <div class="border-title wow fadeInUp animated">
-                                             <h2 class="newslet_title " style="color:#222222;">
-                                                Newsletter
-                                             </h2>
-                                             <p  class="" style="color:#444444"> Pellentesque posuere orci lobortis scelerisque blandit. Donec id tellus lacinia an, tincidunt risus ac</p>
-                                          </div>
-                                          <div class="mc-embedded-subscribe-form">
-                                             <form method="post" action="https://kure-demo.myshopify.com/contact#contact_form" id="contact_form" accept-charset="UTF-8" class="contact-form"><input type="hidden" name="form_type" value="customer" /><input type="hidden" name="utf8" value="✓" />
-                                                <input type="email" value="" placeholder="Email address" name="contact[email]" class="mail" aria-label="Email address" >
-                                                <input type="hidden" name="contact[tags]" value="newsletter">
-                                                <button type="submit" class="btn subscribe" name="subscribe" value="" >Subscribe</button>          
-                                             </form>
-                                          </div>
-                                       </div>
-                                    </div>
-                                   
-                                 </div>
-                                 <div class="dt-sc-hr-invisible-large"></div>
-                              </div>
+                              
+                             
                               <div id="shopify-section-1543388641037" class="shopify-section index-section">
                                  <div data-section-id="1543388641037"  data-section-type="client section" class="client-section">
                                     <div class="grid-uniform section-seven">
@@ -1606,28 +496,28 @@
                                           <div class="grid__item">
                                              <div id="client-car" class="owl-carousel owl-theme client-section">
                                                 <div class="item">
-                                                   <a href="index.html"> <img src="https://cdn.shopify.com/s/files/1/0188/0503/0976/files/c3_250x250.jpg?v=1574166273" alt="" /></a>
+                                                   <a href="index.html"> <img src="/assets/images/logo-Laroche-Posay.png" alt="" /></a>
                                                 </div>
                                                 <div class="item">
-                                                   <a href="index.html"> <img src="https://cdn.shopify.com/s/files/1/0188/0503/0976/files/c2_250x250.jpg?v=1574166288" alt="" /></a>
+                                                   <a href="index.html"> <img src="/assets/images/logo-vichy.png" alt="" /></a>
                                                 </div>
                                                 <div class="item">
-                                                   <a href="index.html"> <img src="https://cdn.shopify.com/s/files/1/0188/0503/0976/files/c4_250x250.jpg?v=1574166304" alt="" /></a>
+                                                   <a href="index.html"> <img src="/assets/images/anessa.png" alt="" /></a>
                                                 </div>
                                                 <div class="item">
-                                                   <a href="index.html"> <img src="https://cdn.shopify.com/s/files/1/0188/0503/0976/files/c1_250x250.jpg?v=1574166318" alt="" /></a>
+                                                   <a href="index.html"> <img src="/assets/images/paulaschoice.jpg" alt="" /></a>
                                                 </div>
                                                 <div class="item">
-                                                   <a href="index.html"> <img src="https://cdn.shopify.com/s/files/1/0188/0503/0976/files/c5_250x250.jpg?v=1574166334" alt="" /></a>
+                                                   <a href="index.html"> <img src="/assets/images/Bioderma-Logo.png" alt="" /></a>
                                                 </div>
                                                 <div class="item">
-                                                   <a href="index.html"> <img src="https://cdn.shopify.com/s/files/1/0188/0503/0976/files/c6_250x250.jpg?v=1574166347" alt="" /></a>
+                                                   <a href="index.html"> <img src="/assets/images/klairs.jpg" alt="" /></a>
                                                 </div>
                                                 <div class="item">
-                                                   <a href="index.html"> <img src="https://cdn.shopify.com/s/files/1/0188/0503/0976/files/c9_250x250.jpg?v=1574166354" alt="" /></a>
+                                                   <a href="index.html"> <img src="/assets/images/logoobagi.png" alt="" /></a>
                                                 </div>
                                                 <div class="item">
-                                                   <a href="index.html"> <img src="https://cdn.shopify.com/s/files/1/0188/0503/0976/files/c7_250x250.jpg?v=1574166362" alt="" /></a>
+                                                   <a href="index.html"> <img src="/assets/images/neo.png" alt="" /></a>
                                                 </div>
                                              </div>
                                              <div class="nav-brands"></div>
