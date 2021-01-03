@@ -3,6 +3,8 @@ import { Router } from '@angular/router';
 import {ProductdetailsService} from "../productdetails/productdetails.service"
 import {Dataset} from "../admin/dataset"
 import { UserLogin } from '../staticvariable';
+import { MatDialog } from '@angular/material/dialog';
+import {CmtproductDialogComponent} from './dialog_procmt/dialog_procmt.component'
 @Component({
     selector: 'app-productdetails',
     templateUrl: './productdetails.component.html',
@@ -18,10 +20,21 @@ export class ProductDetailsComponent implements OnInit {
   public PointPro: Float32Array
   public Linktobuy:string=''    
   
-    constructor(private router: Router,private service:ProductdetailsService ) {}
+    constructor(private router: Router,private service:ProductdetailsService,public dialog: MatDialog ) {}
 
     ngOnInit() {
       this.getPath()
+    }
+    openDialog(): void {
+      const dialogRef = this.dialog.open(CmtproductDialogComponent, {
+        width: '500px',
+        height: '400px',
+      });
+  
+      dialogRef.afterClosed().subscribe(result => {
+        console.log('The dialog was closed');
+        console.log(result);
+      });
     }
     async getPath(){
       const product = await this.service.getProduct(UserLogin.ID3tempt)
@@ -49,4 +62,5 @@ export class ProductDetailsComponent implements OnInit {
     {
       return `data:image/${this.getImageMime(base64)};base64,${base64}`; 
     }
+    
 }

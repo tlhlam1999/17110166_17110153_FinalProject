@@ -1,38 +1,58 @@
 <h2><strong>THÊM BLOG</strong></h2>
 <form class="example-form">
-  <label><strong>CHỦ ĐỀ BLOG</strong></label>
-<select id="input" required="required" [(ngModel)]="this.adminblog.IDTopic" [ngModelOptions]="{standalone: true}">
-  <option value="shop1">Shop uy tín</option>
-  <option value="camnhan1">Cảm nhận sản phẩm của admin</option>
-  <option value="danhgia1">Đánh giá của người dùng</option>
-</select>
-  <label><strong>TIÊU ĐỀ</strong></label>
-    <mat-form-field class="example-full-width">
-        <input matInput placeholder="Cảm nhận về...." name="Name" type="text" id="input" required="required" [(ngModel)]="this.adminblog.Heading" [ngModelOptions]="{standalone: true}">
-      </mat-form-field>
-      <label><strong>NỘI DUNG</strong></label>
-    <mat-form-field class="example-full-width">
-        <mat-label>Description</mat-label>
-        
-        <textarea class="form-control" rows="5" matInput placeholder="Mô tả về ...." name="Point" type="text" id="input" required="required" [(ngModel)]="this.adminblog.Description" [ngModelOptions]="{standalone: true}">
-        </textarea>
-        </mat-form-field>
-        <label><strong>THÊM HÌNH ẢNH</strong></label>
-    <div class="form-group">
+  <div class="row">
+      <div class="col-md-12">
+        <div class="form-group">
+          <label class="bmd-label-floating"> <strong>CHỦ ĐỀ BLOG</strong></label>
+            <select class="col-md-12" id="input" required="required" [(ngModel)]="this.adminblog.IDTopic" [ngModelOptions]="{standalone: true}">
+              <option value="shop1">Shop uy tín</option>
+              <option value="camnhan1">Cảm nhận sản phẩm của admin</option>
+              <option value="danhgia1">Đánh giá của người dùng</option>
+            </select>
+        </div>
+      </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="form-group">
+        <label class="bmd-label-floating"> <strong>TIÊU ĐỀ</strong></label>
+          <mat-form-field class="col-md-12">
+            <input type="text" class="form-control" required="required" [(ngModel)]="this.adminblog.Heading" [ngModelOptions]="{standalone: true}">
+          </mat-form-field>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="form-group">
+        <label class="bmd-label-floating"> <strong>NỘI DUNG</strong></label>
+          <mat-form-field class="col-md-12">
+            <textarea class="form-control" rows="5" matInput placeholder="Mô tả về ...." name="Point" type="text" id="input" required="required" [(ngModel)]="this.adminblog.Description" [ngModelOptions]="{standalone: true}">
+             </textarea>
+          </mat-form-field>
+      </div>
+    </div>
+  </div>
+  <label><strong>THÊM HÌNH ẢNH</strong></label>
+    <div>
        
         <img [src]="url" height="200"> <br/>
         <input type='file' accept="image/*" (change)="onSelectFile($event)">
      </div>
-     <label><strong>TRẠNG THÁI</strong></label>
-    <br/>
-    <select id="input" required="required" [(ngModel)]="this.adminblog.Disabled" [ngModelOptions]="{standalone: true}">
-        <option value="true">true</option>
-        <option value="false">false</option>
-    </select> 
-</form>
-<br>
-<br>
-<div mat-dialog-actions class="myDiv">
-    <button class="btn btn-primary" mat-button (click)="onSave()">Save</button>
-    <button class="btn btn-danger left" mat-button (click)="onNoClick()">Cancel</button>
-</div>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="form-group">
+        <label class="bmd-label-floating"> <strong>TRẠNG THÁI</strong></label>
+      <br/>
+          <select id="input" required="required" [(ngModel)]="this.adminblog.Disabled" [ngModelOptions]="{standalone: true}">
+            <option value="true">ẨN BÀI VIẾT</option>
+            <option value="false">ĐANG HOẠT ĐỘNG</option>
+          </select> 
+      </div>
+    </div>
+  </div>
+  <button class="btn btn-primary" mat-button (click)="onSave()">Save</button>
+  <button class="btn btn-danger right" mat-button (click)="onNoClick()">Cancel</button>
+  </form>
+ 
+

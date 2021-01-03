@@ -19,8 +19,8 @@ export class AdminblogComponent implements OnInit {
     }
     openDialog(): void {
       const dialogRef = this.dialog.open(AdminblogDialogComponent, {
-        width: '900px',
-        height: '500px',
+        width: '1000px',
+        height: '700px',
       });
   
       dialogRef.afterClosed().subscribe(result => {

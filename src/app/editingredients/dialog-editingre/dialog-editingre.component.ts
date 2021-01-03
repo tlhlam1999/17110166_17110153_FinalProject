@@ -50,7 +50,7 @@ import {IngredientDetails} from '../editingredients.model'
             formData.append('uses',this.editingre.Uses)
             formData.append('function',this.editingre.Function)
             formData.append('pointIngre',this.editingre.PointIngre.toString())
-            this.editingre.IDIngre
+          
             this.service.createIngredients(formData);
             alert("Create succesfully !")
             this.onNoClick()

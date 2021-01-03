@@ -1,0 +1,44 @@
+<h2><strong>THÊM BÌNH LUẬN</strong></h2>
+<form class="example-form">
+    <div class="row">
+        <div class="col-md-12">
+          <div class="form-group">
+            <label><strong>HỌ VÀ TÊN</strong> </label>
+            <div class="form-group">
+        
+                <input type="text" class="form-control" required="required" [(ngModel)]="this.productcmt.ComposerName" [ngModelOptions]="{standalone: true}">
+            </div>
+          </div>
+        </div>
+      </div>
+    <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label class="bmd-label-floating"> <strong>EMAIL</strong></label>
+            <input type="text" class="form-control" required="required" [(ngModel)]="this.productcmt.Email" [ngModelOptions]="{standalone: true}">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label class="bmd-label-floating"><strong>SỐ ĐIỆN THOẠI</strong> </label>
+            <input type="text" class="form-control" required="required" [(ngModel)]="this.productcmt.Phone" [ngModelOptions]="{standalone: true}">
+          </div>
+        </div>
+    </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="form-group">
+            <label><strong>BÌNH LUẬN</strong> </label>
+            <div class="form-group">
+        
+              <textarea class="form-control" rows="5" required="required" [(ngModel)]="this.productcmt.Description" [ngModelOptions]="{standalone: true}"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+
+    <button class="btn btn-primary" mat-button (click)="onSave()">Save</button>
+    <button class="btn btn-danger right" mat-button (click)="onNoClick()">Cancel</button>
+</form>

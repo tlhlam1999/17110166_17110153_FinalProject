@@ -1,66 +1,112 @@
 <h2><strong>THÊM SẢN PHẨM</strong></h2>
 <form class="example-form">
-    <label><strong>TÊN SẢN PHẨM</strong></label>
-    <mat-form-field class="example-full-width">
-        
-        <input matInput name="Name" type="text" id="input" required="required" [(ngModel)]="this.product.NameProduct" [ngModelOptions]="{standalone: true}">
-    </mat-form-field>
-    <label><strong>CHỈ SỐ KÍCH ỨNG</strong></label>
-    <mat-form-field class="example-full-width">
-        
-        <input matInput name="Point" type="text" id="input" required="required" [(ngModel)]="this.product.PointProduct" [ngModelOptions]="{standalone: true}">
-    </mat-form-field>
-    <label><strong>MÔ TẢ SẢN PHẨM</strong></label>
-    <mat-form-field class="example-full-width">
-        
-        <textarea style="height: 300px;" name="Description" type="text" id="input" required="required" [(ngModel)]="this.product.Description" [ngModelOptions]="{standalone: true}" matInput ></textarea>
-    </mat-form-field>
-    <label><strong>THÊM HÌNH ẢNH</strong></label>
-    <div class="form-group">
-       
-        <img [src]="url" height="200"> <br/>
-        <input type='file' accept="image/*" (change)="onSelectFile($event)">
-     </div>
-    <mat-label><strong>IDBrand</strong></mat-label>
-    <br/>
-    <select id="input" required="required" [(ngModel)]="this.product.IDBrand" [ngModelOptions]="{standalone: true}">
-        <option value="paula2020">paula2020</option>
-        <option value="laroche2020">laroche2020</option>
-        <option value="anessa2020">anessa2020</option>
-    </select>
-    <br/>
-    <mat-label><strong>IDProduct</strong></mat-label>
-    <br/>
-    <select id="input" required="required" [(ngModel)]="this.product.IDProductType" [ngModelOptions]="{standalone: true}">
-        <option value="duongam">Dưỡng ẩm</option>
-        <option value="kemcn">Kem chống nắng</option>
-       
-    </select>
-    <br/>
-
-    <mat-label><strong>IDSkintype</strong></mat-label>
-    <br/>
-    <select id="input" required="required" [(ngModel)]="this.product.IDSkintype" [ngModelOptions]="{standalone: true}">
-        <option value="dadau">dadau</option>
-        <option value="danhaycam">danhaycam</option>
-        <option value="dakho">dakho</option>
-    </select>
-    <br/> 
-
-    <mat-label><strong>DisabledPro</strong></mat-label>
-    <br/>
-    <select id="input" required="required" [(ngModel)]="this.product.DisabledPro" [ngModelOptions]="{standalone: true}">
-        <option value="true">true</option>
-        <option value="false">false</option>
-    </select> 
-    <label><strong>LINK MUA HÀNG</strong></label>
-    <mat-form-field class="example-full-width">
-        <textarea style="height: 300px;" name="Linktobuy" type="text" id="input" required="required" [(ngModel)]="this.product.Linktobuy" [ngModelOptions]="{standalone: true}" matInput ></textarea>
-    </mat-form-field>
-</form>
-<br>
-<br>
-<div mat-dialog-actions class="myDiv">
+    <div class="row">
+        <div class="col-md-12">
+          <div class="form-group">
+            <label><strong>TÊN SẢN PHẨM</strong></label>
+            <mat-form-field class="example-full-width">
+                
+                <input type="text" class="form-control" required="required" [(ngModel)]="this.product.NameProduct" [ngModelOptions]="{standalone: true}">
+            </mat-form-field>
+          </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+          <div class="form-group">
+            <label><strong>CHỈ SỐ KÍCH ỨNG</strong></label>
+            <mat-form-field class="example-full-width">
+                
+                <input type="text" class="form-control" required="required" [(ngModel)]="this.product.PointProduct" [ngModelOptions]="{standalone: true}">
+            </mat-form-field>
+          </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+          <div class="form-group">
+            <label><strong>MÔ TẢ SẢN PHẨM</strong></label>
+            <mat-form-field class="example-full-width">
+                
+                <textarea style="height: 300px;" name="Description" type="text" id="input" required="required" [(ngModel)]="this.product.Description" [ngModelOptions]="{standalone: true}" matInput ></textarea>
+            </mat-form-field>
+          </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+          <div class="form-group">
+            <label><strong>THÊM HÌNH ẢNH</strong></label>
+            <div>
+            
+                <img [src]="url" height="200"> <br/>
+                <input type='file' accept="image/*" (change)="onSelectFile($event)">
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <mat-label><strong>THƯƠNG HIỆU</strong></mat-label>
+            <br/>
+            <select required="required" [(ngModel)]="this.product.IDBrand" [ngModelOptions]="{standalone: true}">
+                <option value="paula2020">Paula's Choice</option>
+                <option value="laroche2020">Laroche Posay</option>
+                <option value="anessa2020">Anessa</option>
+            </select>
+            <br/>
+          </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
+            <mat-label><strong>LOẠI SẢN PHẨM</strong></mat-label>
+            <br/>
+            <select required="required" [(ngModel)]="this.product.IDProductType" [ngModelOptions]="{standalone: true}">
+                <option value="lamsach">Làm sạch</option>
+                <option value="duongam">Dưỡng ẩm</option>
+                <option value="kemcn">Chống nắng</option>
+                <option value="dactri">Đặc trị</option>
+            </select>
+            <br/>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <mat-label><strong>LOẠI DA PHÙ HỢP</strong></mat-label>
+            <br/>
+            <select required="required" [(ngModel)]="this.product.IDSkintype" [ngModelOptions]="{standalone: true}">
+                <option value="dadau"> Da dầu</option>
+                <option value="danhaycam"> Da nhạy cảm</option>
+                <option value="dakho"> Da khô</option>
+                <option value="dahh"> Da hỗn hợp</option>
+            </select>
+            <br/> 
+          </div>
+        </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <mat-label><strong>TÌNH TRẠNG KINH DOANH</strong></mat-label>
+                <br/>
+                <select required="required" [(ngModel)]="this.product.DisabledPro" [ngModelOptions]="{standalone: true}">
+                    <option value="true">Ngừng kinh doanh</option>
+                    <option value="false">Đang kinh doanh</option>
+                </select> 
+              </div>
+            </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+          <div class="form-group">
+            <label><strong>LINK MUA HÀNG</strong></label>
+            <mat-form-field class="example-full-width">
+                <textarea style="height: 300px;" name="Linktobuy" type="text" id="input" required="required" [(ngModel)]="this.product.Linktobuy" [ngModelOptions]="{standalone: true}" matInput ></textarea>
+            </mat-form-field>
+          </div>
+        </div>
+    </div>
     <button class="btn btn-primary" mat-button (click)="onSave()">Save</button>
-    <button class="btn btn-danger left" mat-button (click)="onNoClick()">Cancel</button>
-</div>
+    <button class="btn btn-danger right" mat-button (click)="onNoClick()">Cancel</button>
+</form>

@@ -42,7 +42,7 @@ const routes: Routes = [
   { path: 'searchproducts',             component: SearchproductsComponent },
   { path: 'searchblogs',             component: SearchblogsComponent },
   { path: 'adminbrands',             component: AdminbrandsComponent },
-  { path: 'blogdetail/:id',             component: BlogdetailComponent },
+  { path: 'blogdetail',             component: BlogdetailComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full' }
 ];
 

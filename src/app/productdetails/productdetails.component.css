@@ -78,7 +78,11 @@
   .header-type-9 .top_bar a,.header-type-9 .top_bar button { color:#ffffff;}    
   .header-type-9 .top_bar a:hover, .header-type-9 .top_bar a:hover span,.header-type-9 .top_bar button:hover { color:#35c7df;}    
 
-
+.site-menu1{
+	font-size: 22px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
   /* Logo block */
   .header-type-9 .site-header__menubar { background: #f6f6f6;}    
   .header-type-9 .site-header__logo a { color:#444444;}
@@ -238,4 +242,16 @@
 }
 .bottom-products-suggest .product-short-suggest .price del {
     color: #D0D0D0;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+.site-menu1{
+	font-size: 22px;
+	text-transform: uppercase;
+	font-weight: bold;
 }

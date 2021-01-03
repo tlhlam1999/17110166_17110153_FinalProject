@@ -16,8 +16,8 @@ export class EditingredientsComponent implements OnInit {
     }
     openDialog(): void {
       const dialogRef = this.dialog.open(EditingredientsDialogComponent, {
-        width: '900px',
-        height: '700px',
+        width: '500px',
+        height: '400px',
       });
   
       dialogRef.afterClosed().subscribe(result => {

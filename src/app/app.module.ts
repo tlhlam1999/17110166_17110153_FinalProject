@@ -41,6 +41,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
 import { MatDialogModule, MatDialogRef } from '@angular/material/dialog';
 import {AdminblogDialogComponent} from './adminblog/dialog-adminblog/dialog-adminblog.component'
+import {CmtproductDialogComponent} from './productdetails/dialog_procmt/dialog_procmt.component'
 import {EditingredientsDialogComponent} from './editingredients/dialog-editingre/dialog-editingre.component'
 @NgModule({
   declarations: [
@@ -70,7 +71,8 @@ import {EditingredientsDialogComponent} from './editingredients/dialog-editingre
     ProductDialogComponent,
     AdminblogDialogComponent,
     EditingredientsDialogComponent,
-    BlogdetailComponent
+    BlogdetailComponent,
+    CmtproductDialogComponent
   ],
   imports: [
     BrowserModule,

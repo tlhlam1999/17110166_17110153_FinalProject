@@ -50,6 +50,7 @@ import {Product} from '../product.model'
             formData.append('description',this.product.Description)
             formData.append('linktobuy',this.product.Linktobuy)
             formData.append('nameProduct',this.product.NameProduct)
+            formData.append('nameProductType',this.product.NameProductType)
             formData.append('pointProduct',this.product.PointProduct.toString())
             formData.append('disabledPro',this.product.DisabledPro.toString())
             formData.append('iD3code',this.product.ID3code)
