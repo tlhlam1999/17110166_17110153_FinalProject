@@ -44,7 +44,6 @@ import {IngredientDetails} from '../editingredients.model'
       async onSave(){
         try{
           const formData = new FormData();
-          if (Image) {
             formData.append('idIngre', this.editingre.IDIngre);
             formData.append('nameIngre',this.editingre.NameIngre)
             formData.append('uses',this.editingre.Uses)
@@ -54,12 +53,7 @@ import {IngredientDetails} from '../editingredients.model'
             this.service.createIngredients(formData);
             alert("Create succesfully !")
             this.onNoClick()
-            this.refresh()
-          }
-          else
-          {
-            alert("Create failure !")
-          }
+            this.refresh()         
         }
         catch(e)
         {

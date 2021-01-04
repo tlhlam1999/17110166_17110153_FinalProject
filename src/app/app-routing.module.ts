@@ -17,7 +17,7 @@ import {UserprofileComponent} from '../app/userprofile/userprofile.component';
 import {AddproductsComponent} from './addproducts/addproducts.component';
 import {EditingredientsComponent} from './editingredients/editingredients.component';
 import {SearchingredientsComponent} from './searchingredients/searchingredients.component';
-import {SearchproductsComponent} from './searchproducts/searchproducts.component';
+import {SearchproductsByNameComponent} from './searchproducts/searchproducts.component';
 import {SearchblogsComponent} from './searchblogs/searchblogs.component';
 import {AdminbrandsComponent} from './adminbrands/adminbrands.component';
 import {BlogdetailComponent} from './blogdetail/blogdetail.component';
@@ -39,7 +39,7 @@ const routes: Routes = [
   { path: 'addproducts',             component: AddproductsComponent },
   { path: 'editingredients',             component: EditingredientsComponent },
   { path: 'searchingredients',             component: SearchingredientsComponent },
-  { path: 'searchproducts',             component: SearchproductsComponent },
+  { path: 'searchproducts',             component: SearchproductsByNameComponent },
   { path: 'searchblogs',             component: SearchblogsComponent },
   { path: 'adminbrands',             component: AdminbrandsComponent },
   { path: 'blogdetail',             component: BlogdetailComponent },

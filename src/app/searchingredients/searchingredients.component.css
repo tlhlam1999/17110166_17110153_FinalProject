@@ -224,3 +224,19 @@ tr.example-element-row:not(.example-expanded-row):active {
 }
 
 
+.site-nav{
+	font-size: 20px;
+}
+.site-menu2{
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.site-menu1{
+	font-size: 22px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+table {
+  width: 100%;
+}

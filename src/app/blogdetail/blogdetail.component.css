@@ -187,3 +187,16 @@
 .header-mobile #showLeftPush { display: inline-block;font-size: 16px;text-align: center;  cursor: pointer;height:40px;line-height:40px;width:40px;  }
 
 
+.site-nav{
+	font-size: 20px;
+}
+.site-menu2{
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.site-menu1{
+	font-size: 22px;
+	text-transform: uppercase;
+	font-weight: bold;
+}

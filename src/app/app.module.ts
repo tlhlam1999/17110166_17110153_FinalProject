@@ -19,7 +19,7 @@ import {AddproductsComponent} from './addproducts/addproducts.component';
 import {UserprofileComponent} from '../app/userprofile/userprofile.component';
 import {EditingredientsComponent} from './editingredients/editingredients.component';
 import {SearchingredientsComponent} from './searchingredients/searchingredients.component';
-import {SearchproductsComponent} from './searchproducts/searchproducts.component';
+import {SearchproductsByNameComponent} from './searchproducts/searchproducts.component';
 import {SearchblogsComponent} from './searchblogs/searchblogs.component';
 import {AdminbrandsComponent} from './adminbrands/adminbrands.component';
 import {BlogdetailComponent} from './blogdetail/blogdetail.component';
@@ -63,7 +63,7 @@ import {EditingredientsDialogComponent} from './editingredients/dialog-editingre
     AddproductsComponent,
     EditingredientsComponent,
     SearchingredientsComponent,
-    SearchproductsComponent,
+    SearchproductsByNameComponent,
     SearchblogsComponent,
     AdminbrandsComponent,
     HeaderComponent,

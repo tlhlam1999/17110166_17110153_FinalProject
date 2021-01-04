@@ -15,6 +15,7 @@ export class ProductDetailsComponent implements OnInit {
   public IdBrandPro:string=''    
   public IdSkinPro:string=''    
   public NameProduct:string=''  
+  public NameProductType:string=''  
   public DescriptionPro:string=''    
   public ImagePro:string='' 
   public PointPro: Float32Array
@@ -43,6 +44,7 @@ export class ProductDetailsComponent implements OnInit {
       this.IdBrandPro = product["idBrand"]
       this.IdSkinPro = product["idSkintype"]
       this.NameProduct = product["nameProduct"]  
+      this.NameProductType = product["nameProductType"]  
       this.DescriptionPro = product["description"]
       this.ImagePro = product["image"]
       this.PointPro = product["pointProduct"]

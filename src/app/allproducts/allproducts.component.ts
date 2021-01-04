@@ -30,7 +30,9 @@ export class AllproductsComponent implements OnInit {
         product.ID3code = this.products[i].iD3code
         product.IDBrand = this.products[i].idBrand
         product.IDSkintype = this.products[i].idSkintype
+        product.IDProductType = this.products[i].idProductType
         product.NameProduct = this.products[i].nameProduct
+        product.NameProductType = this.products[i].nameProductType
         product.Description = this.products[i].description
         product.Linktobuy = this.products[i].linktobuy
         product.Image = this.products[i].image

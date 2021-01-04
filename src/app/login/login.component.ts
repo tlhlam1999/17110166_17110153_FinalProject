@@ -10,7 +10,7 @@ import {UserLogin} from '../staticvariable'
 })
 export class LoginComponent implements OnInit {
     public Users:User
-
+    public authen:boolean
     public m_returnUrl: string;
     constructor(private m_route: ActivatedRoute, private m_router: Router,private service:LoginService ) {}
 
@@ -21,6 +21,7 @@ export class LoginComponent implements OnInit {
         const loginn = await this.service.loginUser(this.Users)
         if(loginn)
         {
+            this.authen = loginn["authen"]
             UserLogin.Id = loginn["idUser"]
             UserLogin.Name = loginn["firstName"]+" "+loginn["lastName"]
             UserLogin.LoginState = true
@@ -28,10 +29,18 @@ export class LoginComponent implements OnInit {
         }
         if(UserLogin.LoginState==true)
         {
-            this.routing()
+            if(this.authen==true)
+                this.routingAdmin()
+            else
+                this.routingUser()
         }
     }
-    routing(): void {
+    routingAdmin(): void {
+        this.m_returnUrl = this.m_route.snapshot.queryParams['returnUrl'] || '/admin';
+        this.m_router.navigateByUrl(this.m_returnUrl, {skipLocationChange:true});
+        //window.location.reload();
+    }
+    routingUser(): void {
         this.m_returnUrl = this.m_route.snapshot.queryParams['returnUrl'] || '/home';
         this.m_router.navigateByUrl(this.m_returnUrl, {skipLocationChange:true});
         //window.location.reload();

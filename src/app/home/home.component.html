@@ -175,7 +175,7 @@
                                                                </div>
                                                                <div class="inner col-xs-12 col-sm-4">
                                                                   <!-- Menu level 2 -->
-                                                                  <a  href="products/calories-meter" class="site-menu2">
+                                                                  <a class="site-menu2">
                                                                   CẤP ẨM - KHÓA ẨM 
                                                                   </a>
                                                                   
@@ -368,7 +368,7 @@
                                                    
                                                 </div>
                                                 <div class="product-detail">
-                                                   <a href="https://kure-demo.myshopify.com/collections/all/products/calories-meter" class="grid-link__title" style="font-size: 20px;">{{product.NameProduct}}</a> 
+                                                   <a (click)="this.getNavigation(product.ID3code)" [routerLink]="['/productdetails/:', product.ID3code]" class="grid-link__title" style="font-size: 20px;">{{product.NameProduct}}</a> 
                                                    <div class="grid-link__meta">
                                                       <div class="product_price">
                                                          <div class="grid-link__org_price" id="ProductPrice">
@@ -380,7 +380,7 @@
                                                       </div>
                                                       
                                                    </div>
-                                                   <button class="snip1582">{{product.NameProductType}}</button>
+                                                   <button class="button1" >{{product.NameProductType}}</button>
                                                    
                                                    
                                                 </div>

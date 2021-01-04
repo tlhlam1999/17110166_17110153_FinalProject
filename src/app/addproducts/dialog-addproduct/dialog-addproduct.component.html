@@ -35,7 +35,7 @@
     </div>
     <div class="row">
         <div class="col-md-12">
-          <div class="form-group">
+          <div>
             <label><strong>THÊM HÌNH ẢNH</strong></label>
             <div>
             
@@ -54,13 +54,22 @@
                 <option value="paula2020">Paula's Choice</option>
                 <option value="laroche2020">Laroche Posay</option>
                 <option value="anessa2020">Anessa</option>
+                <option value="bioderma2020">Bioderma</option>
+                <option value="cosrx2020">Cosrx</option>
+                <option value="dermalogica2020">Dermalogica</option>
+                <option value="exuviance2020">Exuviance</option>
+                <option value="klairs2020">Klairs</option>
+                <option value="loreal2020">L'oreal</option>
+                <option value="maybelline2020">Maybelline</option>
+                <option value="neostrata2020">Neostrata</option>
+                <option value="obagi2020">Obagi</option>
             </select>
             <br/>
           </div>
         </div>
         <div class="col-md-6">
             <div class="form-group">
-            <mat-label><strong>LOẠI SẢN PHẨM</strong></mat-label>
+            <mat-label><strong>ID LOẠI SẢN PHẨM</strong></mat-label>
             <br/>
             <select required="required" [(ngModel)]="this.product.IDProductType" [ngModelOptions]="{standalone: true}">
                 <option value="lamsach">Làm sạch</option>
@@ -71,7 +80,19 @@
             <br/>
             </div>
         </div>
+        
     </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="form-group">
+          <label><strong>LOẠI SẢN PHẨM</strong></label>
+          <mat-form-field class="example-full-width">
+              
+              <input type="text" class="form-control" required="required" [(ngModel)]="this.product.NameProductType" [ngModelOptions]="{standalone: true}">
+          </mat-form-field>
+        </div>
+      </div>
+  </div>
     <div class="row">
         <div class="col-md-6">
           <div class="form-group">

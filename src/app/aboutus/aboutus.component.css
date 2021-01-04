@@ -210,3 +210,17 @@
     .bottom-products-suggest .product-short-suggest .price del {
         color: #D0D0D0;
     }
+    .site-nav{
+      font-size: 20px;
+    }
+    .site-menu2{
+      font-size: 18px;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+    .site-menu1{
+      font-size: 22px;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+    
