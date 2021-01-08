@@ -6,9 +6,9 @@ import { HttpClient } from '@angular/common/http';
 export class DeclareService {
     constructor(private http: HttpClient) {
     }
-    private urlAPI = "api/Point/";
+    private urlAPI = "api/IngredientDetail/";
 
-    getDeclare = async (id) => {
+    getIngre = async (id) => {
         try {
             const result = await this.http.get(this.urlAPI+id).toPromise();
             return result;
@@ -18,8 +18,14 @@ export class DeclareService {
             // this.removeToken();
         }
     }
-  
-    createDeclare = async (formData) => {
-        return await this.http.post(this.urlAPI,formData).toPromise();            
+    getallIngre = async () => {
+        try {
+            const result = await this.http.get(this.urlAPI).toPromise();
+            return result;
+        }
+        catch (e) {
+            console.log(e);
+            // this.removeToken();
+        }
     }
 }

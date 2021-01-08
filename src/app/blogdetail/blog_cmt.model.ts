@@ -1,11 +1,11 @@
-export class Productcmt {
-    IDCmtProduct:string;
-    IDProduct:string;
+export class Blogcmt {
+    IDCmtBlog:string;
+    IDBlog:string;
     Description:string;
     ComposerName:string;
     Phone:string;
     Email:string;
     Image:string;
-    DisabledCmtProduct:string;
+    DisabledCmtBlog:boolean;
     Timecmt: string;
 }

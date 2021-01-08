@@ -5,6 +5,7 @@ import {Dataset} from "../admin/dataset"
 import { UserLogin } from '../staticvariable';
 import { MatDialog } from '@angular/material/dialog';
 import {CmtproductDialogComponent} from './dialog_procmt/dialog_procmt.component'
+import {Productcmt} from 'src/app/productdetails/product_cmt.model'
 @Component({
     selector: 'app-productdetails',
     templateUrl: './productdetails.component.html',
@@ -20,11 +21,14 @@ export class ProductDetailsComponent implements OnInit {
   public ImagePro:string='' 
   public PointPro: Float32Array
   public Linktobuy:string=''    
-  
+  public pcmt : Productcmt
+  public cmts:any
+  public cmtList = new Array<Productcmt>();
     constructor(private router: Router,private service:ProductdetailsService,public dialog: MatDialog ) {}
 
     ngOnInit() {
       this.getPath()
+      this.getCommnet()
     }
     openDialog(): void {
       const dialogRef = this.dialog.open(CmtproductDialogComponent, {
@@ -33,13 +37,12 @@ export class ProductDetailsComponent implements OnInit {
       });
   
       dialogRef.afterClosed().subscribe(result => {
-        console.log('The dialog was closed');
-        console.log(result);
+        this.cmtList = new Array<Productcmt>();
+        this.getCommnet()
       });
     }
     async getPath(){
       const product = await this.service.getProduct(UserLogin.ID3tempt)
-      console.log(product)
       this.Id3Code = product["iD3code"]
       this.IdBrandPro = product["idBrand"]
       this.IdSkinPro = product["idSkintype"]
@@ -50,6 +53,17 @@ export class ProductDetailsComponent implements OnInit {
       this.PointPro = product["pointProduct"]
       this.Linktobuy = product["linktobuy"]
       
+    }
+    async getCommnet(){
+      this.cmts = await this.service.getCommentProduct(UserLogin.ID3tempt)
+      console.log(this.cmts)
+      for (let i = 0; i < this.cmts.length; i++) {
+        let cmt = new Productcmt()
+        cmt.ComposerName = this.cmts[i].composerName
+        cmt.Description = this.cmts[i].description
+        cmt.Email = this.cmts[i].email
+        this.cmtList.push(cmt)
+      }
     }
     getImageMime(base64: string): string
     {

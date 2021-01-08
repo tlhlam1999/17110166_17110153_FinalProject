@@ -8,7 +8,7 @@ export class BlogdetailService {
     }
     private urlAPI = "api/Blog/";
 
-    getProduct = async (id) => {
+    getBlog = async (id) => {
         try {
             const result = await this.http.get(this.urlAPI+id).toPromise();
             return result;
@@ -16,6 +16,24 @@ export class BlogdetailService {
         catch (e) {
             console.log(e);
             // this.removeToken();
+        }
+    }
+    getCommentBlog = async (id) => {
+        try {
+            const result = await this.http.get("api/CommentBlog/cmt?idP="+id).toPromise();
+            return result;
+        }
+        catch (e) {
+            console.log(e);
+        }
+    }
+    createComment = async (formdata) => {
+        try {
+            const result = await this.http.post("api/CommentBlog",formdata).toPromise();
+            return result;
+        }
+        catch (e) {
+            console.log(e);
         }
     }
 }

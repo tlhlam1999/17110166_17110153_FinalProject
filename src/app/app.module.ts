@@ -18,7 +18,7 @@ import {AdminblogComponent} from './adminblog/adminblog.component';
 import {AddproductsComponent} from './addproducts/addproducts.component';
 import {UserprofileComponent} from '../app/userprofile/userprofile.component';
 import {EditingredientsComponent} from './editingredients/editingredients.component';
-import {SearchingredientsComponent} from './searchingredients/searchingredients.component';
+import {SearchIngreByNameComponent} from './searchingredients/searchingredients.component';
 import {SearchproductsByNameComponent} from './searchproducts/searchproducts.component';
 import {SearchblogsComponent} from './searchblogs/searchblogs.component';
 import {AdminbrandsComponent} from './adminbrands/adminbrands.component';
@@ -39,9 +39,11 @@ import { BrandService } from './adminbrands/shared/adminbrands.service';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
+import {MatCardModule} from '@angular/material/card';
 import { MatDialogModule, MatDialogRef } from '@angular/material/dialog';
 import {AdminblogDialogComponent} from './adminblog/dialog-adminblog/dialog-adminblog.component'
 import {CmtproductDialogComponent} from './productdetails/dialog_procmt/dialog_procmt.component'
+import {CmtblogDialogComponent} from '../app/blogdetail/dialog_blogcmt/dialog_blogcmt.component'
 import {EditingredientsDialogComponent} from './editingredients/dialog-editingre/dialog-editingre.component'
 @NgModule({
   declarations: [
@@ -62,7 +64,7 @@ import {EditingredientsDialogComponent} from './editingredients/dialog-editingre
     AdminblogComponent,
     AddproductsComponent,
     EditingredientsComponent,
-    SearchingredientsComponent,
+    SearchIngreByNameComponent,
     SearchproductsByNameComponent,
     SearchblogsComponent,
     AdminbrandsComponent,
@@ -72,7 +74,8 @@ import {EditingredientsDialogComponent} from './editingredients/dialog-editingre
     AdminblogDialogComponent,
     EditingredientsDialogComponent,
     BlogdetailComponent,
-    CmtproductDialogComponent
+    CmtproductDialogComponent,
+    CmtblogDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -88,7 +91,8 @@ import {EditingredientsDialogComponent} from './editingredients/dialog-editingre
     HttpClientModule,
     ReactiveFormsModule,
     FormsModule,
-    MatDialogModule
+    MatDialogModule,
+    MatCardModule
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
   providers: [BrandService,

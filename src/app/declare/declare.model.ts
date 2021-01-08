@@ -1,10 +1,7 @@
 export class Declare {
-    IDPoint:string;
-    IDSkinType:string;
-    PAcneType: number;
-    PPastUsing: number;
-    PDailyHabit: number;
-    PMealHabit: number;
-    PTotal: number;
-    Image:string;
+    IDIngre:string;
+    NameIngre:string;
+    Uses:string;
+    Function:string;
+    PointIngre:number;
 }

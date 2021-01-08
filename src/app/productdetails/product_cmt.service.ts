@@ -4,12 +4,9 @@ import { HttpClient } from '@angular/common/http';
     providedIn: 'root'
 })
 export class CmtProductService {
-    private urlAPI = 'api/CommentProduct/';
+    private urlAPI = 'api/CommentProduct';
 
     constructor(private http: HttpClient) {
 
-    }
-    createcmtpro = async (formData) => {
-        return await this.http.post(this.urlAPI,formData).toPromise();            
     }
 }

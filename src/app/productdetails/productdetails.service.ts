@@ -18,4 +18,22 @@ export class ProductdetailsService {
             // this.removeToken();
         }
     }
+    getCommentProduct = async (id) => {
+        try {
+            const result = await this.http.get("api/CommentProduct/cmt?idP="+id).toPromise();
+            return result;
+        }
+        catch (e) {
+            console.log(e);
+        }
+    }
+    createComment = async (formdata) => {
+        try {
+            const result = await this.http.post("api/CommentProduct/",formdata).toPromise();
+            return result;
+        }
+        catch (e) {
+            console.log(e);
+        }
+    }
 }

@@ -14,17 +14,63 @@ export class SearchproductsByNameComponent implements OnInit {
   public product:Product
   public m_returnUrl: string;
   public name:string;
+  public point:string;
+  public loaisp:string;
   check:boolean
     constructor(private m_route: ActivatedRoute, private m_router: Router ,private service:AllProductByNameService) {}
 
-    ngOnInit() {
-      
+    ngOnInit() {     
       this.check=UserLogin.LoginState
-      this.getProductListByName()
+      this.m_router.routeReuseStrategy.shouldReuseRoute = () =>{
+        return false;
+      }
     }
     async getProductListByName(){
       this.products = await this.service.getallProductByName(this.name)
       console.log(this.products)
+      this.productlist=new Array<Product>()
+      for(let i=0;i<this.products.length;i++)
+      {
+        let product = new Product()
+        product.ID3code = this.products[i].iD3code
+        product.IDBrand = this.products[i].idBrand
+        product.IDSkintype = this.products[i].idSkintype
+        product.IDProductType = this.products[i].idProductType
+        product.NameProduct = this.products[i].nameProduct
+        product.NameProductType = this.products[i].nameProductType
+        product.Description = this.products[i].description
+        product.Linktobuy = this.products[i].linktobuy
+        product.Image = this.products[i].image
+        product.PointProduct = this.products[i].pointProduct
+        this.productlist.push(product)
+      }
+      
+    }
+    async getProductListByPoint(){
+      this.products = await this.service.getallProductByPoint(this.point)
+      console.log(this.products)
+      this.productlist=new Array<Product>()
+      for(let i=0;i<this.products.length;i++)
+      {
+        let product = new Product()
+        product.ID3code = this.products[i].iD3code
+        product.IDBrand = this.products[i].idBrand
+        product.IDSkintype = this.products[i].idSkintype
+        product.IDProductType = this.products[i].idProductType
+        product.NameProduct = this.products[i].nameProduct
+        product.NameProductType = this.products[i].nameProductType
+        product.Description = this.products[i].description
+        product.Linktobuy = this.products[i].linktobuy
+        product.Image = this.products[i].image
+        product.PointProduct = this.products[i].pointProduct
+        this.productlist.push(product)
+      }
+      
+    }
+    async getProductListByLoaisp(){
+      this.products = await this.service.getallProductByLoaisp(this.loaisp)
+      console.log(this.products)
+      this.productlist=new Array<Product>()
       for(let i=0;i<this.products.length;i++)
       {
         let product = new Product()
@@ -59,5 +105,5 @@ export class SearchproductsByNameComponent implements OnInit {
     this.m_returnUrl = this.m_route.snapshot.queryParams['returnUrl'] || '/productdetails/'+id;
     UserLogin.ID3tempt = id
     this.m_router.navigateByUrl(this.m_returnUrl, {skipLocationChange:true});
-}
+  }
 }
